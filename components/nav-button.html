@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive nav Button</title>
+  <style>
+    .nav-btn {
+  width: 117px;
+  height: 38px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #FF5900 0%, #134B9D 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin: 0 auto; /* centers button */
+}
+
+.nav-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.inner-nav-btn {
+  width: 112px;
+  height: 33px;
+  background: black;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-nav-btn p {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+/* ✅ Tablet screens (<= 768px) */
+@media (max-width: 768px) {
+  .nav-btn {
+    width: 100px;
+    height: 34px;
+  }
+
+  .inner-nav-btn {
+    width: 96px;
+    height: 30px;
+  }
+
+  .inner-nav-btn p {
+    font-size: 14px;
+  }
+}
+
+/* ✅ Mobile screens (<= 480px) */
+@media (max-width: 480px) {
+  .nav-btn {
+    width: 85px;
+    height: 30px;
+  }
+
+  .inner-nav-btn {
+    width: 81px;
+    height: 26px;
+  }
+
+  .inner-nav-btn p {
+    font-size: 12px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <button class="nav-btn">
+    <div class="inner-nav-btn">
+      <p>Get Started</p>
+    </div>
+  </button>
+
+</body>
+</html>

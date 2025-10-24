@@ -1,0 +1,207 @@
+    /* Key Concepts Section Styles */
+    .key-concepts {
+        width: 100%;
+        padding: 80px 0;
+        position: relative;
+    }
+
+    .key-concepts::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .concepts-container {
+        max-width: 1140px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+    }
+
+    .concepts-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+        justify-content: center;
+    }
+
+    .concept-box {
+        width: 215px;
+        height: 215px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 20px;
+        background: rgba(255, 255, 255, 0.02);
+        backdrop-filter: blur(10px);
+        transition: all 0.4s ease;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .concept-box::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 1px solid transparent;
+        border-radius: 16px;
+        background: linear-gradient(135deg, 
+            rgba(222, 116, 21, 0.1) 0%, 
+            rgba(111, 110, 94, 0.1) 50%, 
+            rgba(0, 104, 166, 0.1) 100%);
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        mask-composite: exclude;
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        padding: 1px;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+
+    .concept-box:hover {
+        transform: translateY(-8px) scale(1.05);
+        border-color: rgba(255, 255, 255, 0.4);
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    }
+
+    .concept-box:hover::before {
+        opacity: 1;
+    }
+
+    .concept-icon {
+        color: white;
+        margin-bottom: 20px;
+        transition: all 0.4s ease;
+        position: relative;
+    }
+
+    .concept-box:hover .concept-icon {
+        color: #DE7415;
+        transform: scale(1.1);
+    }
+
+    /* Individual icon color variations on hover */
+    .concept-box:nth-child(2):hover .concept-icon {
+        color: #6F6E5E;
+    }
+
+    .concept-box:nth-child(3):hover .concept-icon {
+        color: #0068A6;
+    }
+
+    .concept-box:nth-child(4):hover .concept-icon {
+        color: #DE7415;
+    }
+
+    .concept-box:nth-child(5):hover .concept-icon {
+        color: #6F6E5E;
+    }
+
+    .concept-title {
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+        margin: 0;
+        line-height: 1.4;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .concept-box:hover .concept-title {
+        color: rgba(255, 255, 255, 0.9);
+        transform: translateY(2px);
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 1200px) {
+        .concepts-container {
+            max-width: 95%;
+        }
+
+        .concepts-grid {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+        }
+
+        .concept-box {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .key-concepts {
+            padding: 60px 0;
+        }
+
+        .concepts-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .concept-box {
+            width: 100%;
+            max-width: 180px;
+            height: 180px;
+            margin: 0 auto;
+        }
+
+        .concept-icon {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 15px;
+        }
+
+        .concept-title {
+            font-size: 15px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .concepts-grid {
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .concept-box {
+            max-width: 215px;
+            height: 160px;
+            padding: 20px 15px;
+        }
+
+        .concept-icon {
+            width: 36px;
+            height: 36px;
+            margin-bottom: 12px;
+        }
+
+        .concept-title {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 380px) {
+        .concept-box {
+            height: 140px;
+        }
+
+        .concept-icon {
+            width: 32px;
+            height: 32px;
+            margin-bottom: 10px;
+        }
+
+        .concept-title {
+            font-size: 13px;
+        }
+    }
