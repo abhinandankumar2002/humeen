@@ -1,0 +1,99 @@
+/* Core Services Section Styles */
+.core-services {
+    width: 100%;
+    padding: 100px 0;
+    position: relative;
+}
+
+.core-services::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: 
+            radial-gradient(circle at 10% 20%, rgba(222, 116, 21, 0.05) 0%, transparent 50%),
+            radial-gradient(circle at 90% 80%, rgba(0, 104, 166, 0.05) 0%, transparent 50%); */
+    pointer-events: none;
+}
+
+.services-container {
+    max-width: 1139px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.services-header {
+    text-align: center;
+    margin-bottom: 80px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-subtitle {
+    font-size: 16px;
+    color: #DE7415;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.services-title {
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+    /* line-height: 1.2;
+        margin: 0 0 30px 0;
+        background: linear-gradient(90deg, #DE7415 0%, #6F6E5E 50%, #0068A6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text; */
+}
+
+.services-description {
+    font-size: 19px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1200px) {
+    .services-container {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .core-services {
+        padding: 60px 0;
+    }
+
+    .services-header {
+        margin-bottom: 50px;
+    }
+
+    .services-title {
+        font-size: 36px;
+    }
+
+    .services-description {
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .services-title {
+        font-size: 28px;
+    }
+
+    .services-subtitle {
+        font-size: 14px;
+    }
+}

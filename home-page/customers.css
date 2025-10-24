@@ -1,0 +1,187 @@
+/* Customers Section Styles */
+.customers {
+    width: 100%;
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.customers-container {
+    max-width: 1139px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.customers-title {
+    font-size: 42px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+}
+
+.slider-track {
+    display: flex;
+    gap: 60px;
+    animation: slide 30s linear infinite;
+    width: max-content;
+}
+
+.logo-item {
+    flex-shrink: 0;
+    width: 150px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.logo-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.logo-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.logo-image {
+    max-width: 100px;
+    max-height: 50px;
+    filter: brightness(0) invert(1);
+    transition: all 0.3s ease;
+}
+
+.logo-item:hover .logo-image {
+    filter: brightness(0) invert(1) drop-shadow(0 4px 8px rgba(255, 255, 255, 0.3));
+}
+
+/* Slider Animation */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-150px * 7 - 60px * 6));
+        /* Adjust based on logo count */
+    }
+}
+
+/* Pause animation on hover */
+.slider-track:hover {
+    animation-play-state: paused;
+}
+
+/* Gradient fade edges */
+.slider-container::before,
+.slider-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.slider-container::before {
+    left: 0;
+    background: linear-gradient(90deg, #000 0%, transparent 100%);
+}
+
+.slider-container::after {
+    right: 0;
+    background: linear-gradient(270deg, #000 0%, transparent 100%);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .customers {
+        padding: 60px 0;
+    }
+
+    .customers-title {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .logo-item {
+        width: 120px;
+        height: 70px;
+    }
+
+    .slider-track {
+        gap: 40px;
+    }
+
+    .logo-text {
+        font-size: 14px;
+    }
+
+    .logo-image {
+        max-width: 80px;
+        max-height: 40px;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(-120px * 7 - 40px * 6));
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .customers-title {
+        font-size: 28px;
+    }
+
+    .logo-item {
+        width: 100px;
+        height: 60px;
+    }
+
+    .slider-track {
+        gap: 30px;
+    }
+
+    .logo-text {
+        font-size: 12px;
+    }
+
+    .logo-image {
+        max-width: 70px;
+        max-height: 35px;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(-100px * 7 - 30px * 6));
+        }
+    }
+}
