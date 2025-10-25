@@ -1,132 +1,169 @@
 /* Hero Section Styles */
 .hero {
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 0;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+  background-image: url('\\media\\backgroun-image.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-/* Background image placeholder - remove this when you add your actual background */
 .hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    pointer-events: none;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
 }
 
 .hero-container {
-    max-width: 1139px;
-    width: 100%;
-    padding: 0 20px;
-    position: relative;
-    z-index: 2;
+  max-width: 1139px;
+  width: 100%;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-badge {
-      width: 266px;
-      height: 63px;
-      border-radius: 16px;
-      background: linear-gradient(90deg, #FF5900 0%, #134B9D 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  width: 266px;
+  height: 63px;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #FF5900 0%, #134B9D 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    .inner-hero-badge {
-      width: 256px;
-      height: 54px;
-      background: black;
-      border-radius: 12px; /* optional: gives inner smooth edges */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+.inner-hero-badge {
+  width: 262px;
+  height: 58px;
+  background: black;
+  border-radius: 16px;
+  /* optional: gives inner smooth edges */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    .inner-hero-badge p {
-      font-size: 24px;
-      font-weight: bold;
-      color: white;
-      margin: 0;
-    }
+.inner-hero-badge p {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
 
 .hero-title {
-    font-size: 88px;
-    font-weight: 500;
-    color: white;
-    line-height: 1.1;
-    margin: 0 0 30px 0;
-    text-align: left;
+  font-size: 88px;
+  font-weight: 500;
+  color: white;
+  line-height: 1.1;
+  margin: 0 0 30px 0;
+  text-align: left;
 }
 
 .hero-description {
-    font-size: 19px;
-    color: white;
-    line-height: 1.6;
-    margin: 0 0 50px 0;
-    max-width: 600px;
-    text-align: left;
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+  font-size: 19px;
+  color: white;
+  line-height: 1.6;
+  margin: 0 0 50px 0;
+  max-width: 600px;
+  text-align: left;
 }
 
 .btn {
-    width: 177px;
-    height: 50px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: 1px solid transparent;
+  width: 177px;
+  height: 50px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
 }
 
 .btn-primary {
-    background: linear-gradient(90deg, #DE7415 0%, #6F6E5E 78%, #0068A6 100%);
-    color: white;
+  background: linear-gradient(90deg, #DE7415 0%, #6F6E5E 78%, #0068A6 100%);
+  color: white;
 }
 
 .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(222, 116, 21, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(222, 116, 21, 0.3);
 }
 
 .btn-secondary {
-    background: transparent;
-    color: white;
-    border: 1px solid;
-    border-image: linear-gradient(90deg, #DE7415 0%, #6F6E5E 78%, #0068A6 100%) 1;
+  background: transparent;
+  color: white;
+  border: 1px solid;
+  border-image: linear-gradient(90deg, #DE7415 0%, #6F6E5E 78%, #0068A6 100%) 1;
 }
 
 .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hero-btn {
+  width: 178px;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #FF5900 0%, #134B9D 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.inner-hero-btn {
+  width: 176px;
+  height: 48px;
+  background: black;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-hero-btn p {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 1200px) {
-    .hero-container {
-        max-width: 95%;
-    }
+  .hero-container {
+    max-width: 95%;
+  }
 }
 
 @media (max-width: 768px) {
-    .hero {
-        min-height: 80vh;
-        padding: 60px 0;
-    }
+  .hero {
+    min-height: 80vh;
+    padding: 60px 0;
+  }
 
-    .hero-badge {
+  .hero-badge {
     width: 220px;
     height: 55px;
   }
@@ -141,31 +178,26 @@
   }
 }
 
-    .hero-title {
-        font-size: 128px;
-        margin-bottom: 20px;
-    }
+.hero-title {
+  font-size: 128px;
+  margin-bottom: 20px;
+}
 
-    .hero-description {
-        font-size: 17px;
-        margin-bottom: 40px;
-    }
+.hero-description {
+  font-size: 17px;
+  margin-bottom: 40px;
+}
 
-    .hero-buttons {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .btn {
-        width: 200px;
-    }
+.btn {
+  width: 200px;
+}
 
 @media (max-width: 480px) {
-    .hero-title {
-        font-size: 36px;
-    }
+  .hero-title {
+    font-size: 36px;
+  }
 
-     .hero-badge {
+  .hero-badge {
     width: 180px;
     height: 50px;
   }
@@ -179,88 +211,52 @@
     font-size: 16px;
   }
 
-    .hero-buttons {
-        width: 100%;
-    }
-
-    .btn {
-        width: 100%;
-        max-width: 200px;
-    }
+  .btn {
+    width: 100%;
+    max-width: 200px;
+  }
 }
 
-.hero-btn {
-      width: 177px;
-      height: 50px;
-      border: none;
-      border-radius: 8px;
-      background: linear-gradient(90deg, #FF5900 0%, #134B9D 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      padding: 0;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      margin: 0 auto; /* centers button */
-    }
+.hero-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
 
-    .hero-btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    }
+/* ✅ Tablet (<= 768px) */
+@media (max-width: 768px) {
+  .hero-btn {
+    width: 220px;
+    height: 55px;
+  }
 
-    .inner-hero-btn {
-      width: 172px;
-      height: 45px;
-      background: black;
-      border-radius: 6px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  .inner-hero-btn {
+    width: 210px;
+    height: 48px;
+  }
 
-    .inner-hero-btn p {
-      font-size: 16px;
-      font-weight: bold;
-      color: white;
-      margin: 0;
-    }
+  .inner-hero-btn p {
+    font-size: 20px;
+  }
+}
 
-    /* ✅ Tablet (<= 768px) */
-    @media (max-width: 768px) {
-      .hero-btn {
-        width: 220px;
-        height: 55px;
-      }
+/* ✅ Mobile (<= 480px) */
+@media (max-width: 480px) {
+  .hero-btn {
+    width: 180px;
+    height: 50px;
+  }
 
-      .inner-hero-btn {
-        width: 210px;
-        height: 48px;
-      }
+  .inner-hero-btn {
+    width: 170px;
+    height: 44px;
+  }
 
-      .inner-hero-btn p {
-        font-size: 20px;
-      }
-    }
+  .inner-hero-btn p {
+    font-size: 16px;
+  }
+}
 
-    /* ✅ Mobile (<= 480px) */
-    @media (max-width: 480px) {
-      .hero-btn {
-        width: 180px;
-        height: 50px;
-      }
-
-      .inner-hero-btn {
-        width: 170px;
-        height: 44px;
-      }
-
-      .inner-hero-btn p {
-        font-size: 16px;
-      }
-    }
-
-       .nav-btn {
+.nav-btn {
   width: 117px;
   height: 38px;
   border: none;
@@ -294,5 +290,42 @@
   font-weight: bold;
   color: white;
   margin: 0;
+}
+
+
+/* === Hero Animation Styles === */
+.hero-animation {
+  position: absolute;
+  right: -10%; /* adjust as needed */
+  bottom: 30%; /* adjust as needed */
+  width: 50%; /* adjust as needed */
+  max-width: 700px;
+  z-index: 1;
+  pointer-events: none;
+  transform: translateY(10%);
+  overflow: visible;
+}
+
+/* 🌀 Make the image spin continuously */
+.hero-animation img {
+  width: 100%;
+  height: auto;
+  display: block;
+  animation: spin 25s linear infinite; /* 👈 controls speed & smoothness */
+}
+
+/* ✨ Define the spin keyframes */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ✅ Keep the hero container from extending */
+.hero {
+  overflow: hidden;
 }
 

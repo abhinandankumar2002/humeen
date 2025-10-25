@@ -13,7 +13,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: 
+        background:
             radial-gradient(circle at 20% 80%, rgba(222, 116, 21, 0.2) 0%, transparent 50%),
             radial-gradient(circle at 80% 20%, rgba(0, 104, 166, 0.2) 0%, transparent 50%);
         pointer-events: none;

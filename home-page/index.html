@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HUMEEN | Digital Framework & Business Strategy</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navigation-bar.css">
     <link rel="stylesheet" href="hero.css">
     <link rel="stylesheet" href="customers.css">
     <link rel="stylesheet" href="featured-services-section.css">
@@ -33,8 +34,8 @@
                 <a href="#contact">Contact</a>
             </div>
 
-            <button class="nav-btn">
-                <div class="inner-nav-btn">
+            <button class="desktop-btn">
+                <div class="inner-nav-btn-desktop">
                     <p>Get Started</p>
                 </div>
             </button>
@@ -53,693 +54,815 @@
             <a href="#pricing">Pricing</a>
             <a href="#contact">Contact</a>
             <button class="nav-btn">
-    <div class="inner-nav-btn">
-      <p>Get Started</p>
-    </div>
-  </button>
+                <div class="inner-nav-btn">
+                    <p>Get Started</p>
+                </div>
+            </button>
         </div>
     </div>
 
     <!-- Hero Section -->
     <section class="hero">
+
+        <div class="hero-animation">
+            <img src="circle.png" alt="Digital growth animation">
+            <!-- OR -->
+            <!-- <lottie-player src="your-animation.json" background="transparent" speed="1" loop autoplay></lottie-player> -->
+        </div>
         <div class="hero-container">
-             <div class="hero-badge">
-    <div class="inner-hero-badge">
-      <p>Grow @Rs. 9/-</p>
-    </div>
-  </div>
+            <div class="hero-badge">
+                <div class="inner-hero-badge">
+                    <p>Grow @Rs. 9/-</p>
+                </div>
+            </div>
 
             <h1 class="hero-title">Profit is our <br>
-Favorite Metrics   
-</h1>
+                Favourite Metrics
+            </h1>
 
             <p class="hero-description">Let’s Build our Digital Line </p>
 
             <div class="hero-buttons">
                 <button class="hero-btn">
-                     <div class="inner-hero-btn">
+                    <div class="inner-hero-btn">
                         <p>Show me How</p>
                     </div>
-                 </button>
+                </button>
 
-                 <button class="hero-btn">
-                     <div class="inner-hero-btn">
-                        <p>View</p>
+                <button class="hero-btn">
+                    <div class="inner-hero-btn">
+                        <p>View Price</p>
                     </div>
-                 </button>
+                </button>
             </div>
+
+            <section class="key-concepts">
+                <div class="concepts-container">
+                    <div class="concepts-grid">
+
+                        <!-- Box 1: Content Creation -->
+                        <div class="concept-box">
+                            <div class="inner-concept-box">
+                                <h3 class="concept-title">Buy one Month plan get one free</h3>
+                            </div>
+                        </div>
+
+                        <!-- Box 2: Search & Visibility -->
+                        <div class="concept-box">
+                            <div class="inner-concept-box">
+                                <h3 class="concept-title">Get Free website <br><br>
+
+                                    @Rs. 14,999</h3>
+                            </div>
+                        </div>
+
+                        <!-- Box 3: Social Media Marketing -->
+                        <div class="concept-box">
+                            <div class="inner-concept-box">
+                                <h3 class="concept-title">Social Media
+                                    Marketing<br><br>
+                                    @Rs. 499</h3>
+                            </div>
+                        </div>
+
+                        <!-- Box 4: Analytics & Conversion -->
+                        <div class="concept-box">
+                            <div class="inner-concept-box">
+                                <h3 class="concept-title">Chat Bot UX<br><br>
+                                    @Rs. 199</h3>
+                            </div>
+                        </div>
+
+                        <!-- Box 5: Reputation & Review Management -->
+                        <div class="concept-box">
+                            <div class="inner-concept-box">
+                                <h3 class="concept-title">Reputation & Review Management</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </section>
 
 
 
     <!-- Past Customers Section -->
-<section class="customers">
-    <div class="customers-container">
-        <h2 class="customers-title">Our past Customers</h2>
-        
-        <div class="slider-container">
-            <div class="slider-track" id="sliderTrack">
-                <!-- Logos will be duplicated by JavaScript for seamless loop -->
-            </div>
-        </div>
-    </div>
-</section>
+    <section class="customers">
+        <div class="customers-container">
+            <h2 class="customers-title">Our past Customers</h2>
 
-<!-- Core Services Section -->
-<section class="core-services">
-    <div class="services-container">
-        <div class="services-header">
-            <p class="services-subtitle">Our Core Services</p>
-            <h2 class="services-title">Get Found, Engage Customers, Drive Growth</h2>
-            <p class="services-description">HUMEEN helps you tackle marketing bottlenecks, streamline your strategy, and achieve measurable ROI with ease.</p>
-        </div>
-    </div>
-</section>
-
-<!-- Featured Services Section -->
-<section class="featured-services">
-    <div class="featured-container">
-        <div class="services-columns">
-            <!-- Column 1 -->
-            <div class="service-column column-1">
-                <div class="service-image-container">
-                    <!-- Replace with your actual image -->
-                    <img src="https://via.placeholder.com/438x322/DE7415/FFFFFF?text=SEO+PPC+Visual" alt="Search & Visibility" class="service-image">
-                </div>
-                <div class="service-content">
-                    <h3>Search & Visibility (SEO/PPC)</h3>
-                    <p>Integrate Google, Bing, and more - dominate search results and drive qualified traffic instantly.</p>
-                </div>
-            </div>
-
-            <!-- Column 2 -->
-            <div class="service-column column-2">
-                <div class="service-image-container">
-                    <!-- Replace with your actual image -->
-                    <img src="https://via.placeholder.com/643x322/0068A6/FFFFFF?text=Content+Social+Marketing" alt="Content & Social Marketing" class="service-image">
-                </div>
-                <div class="service-content">
-                    <h3>Content & Social Marketing</h3>
-                    <p>Create engaging content, manage social presence & build communities with a data-driven approach.</p>
+            <div class="slider-container">
+                <div class="slider-track" id="sliderTrack">
+                    <!-- Logos will be duplicated by JavaScript for seamless loop -->
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Featured Services Section - Reversed -->
-<section class="featured-services reversed">
-    <div class="featured-container">
-        <div class="services-columns reversed-columns">
-            <!-- Column 2 now on left -->
-            <div class="service-column column-2">
-                <div class="service-image-container">
-                    <!-- Replace with your actual image -->
-                    <img src="https://via.placeholder.com/643x322/0068A6/FFFFFF?text=Content+Social+Marketing" alt="Content & Social Marketing" class="service-image">
-                </div>
-                <div class="service-content">
-                    <h3>Content & Social Marketing</h3>
-                    <p>Create engaging content, manage social presence & build communities with a data-driven approach.</p>
-                </div>
-            </div>
-
-            <!-- Column 1 now on right -->
-            <div class="service-column column-1">
-                <div class="service-image-container">
-                    <!-- Replace with your actual image -->
-                    <img src="https://via.placeholder.com/438x322/DE7415/FFFFFF?text=SEO+PPC+Visual" alt="Search & Visibility" class="service-image">
-                </div>
-                <div class="service-content">
-                    <h3>Search & Visibility (SEO/PPC)</h3>
-                    <p>Integrate Google, Bing, and more - dominate search results and drive qualified traffic instantly.</p>
-                </div>
+    <!-- Core Services Section -->
+    <section class="core-services">
+        <div class="services-container">
+            <div class="services-header">
+                <p class="services-subtitle">Our Core Services</p>
+                <h2 class="services-title">Get Found, Engage Customers, Drive Growth</h2>
+                <p class="services-description">HUMEEN helps you tackle marketing bottlenecks, streamline your strategy,
+                    and achieve measurable ROI with ease.</p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Key Concepts Section -->
-<section class="key-concepts">
-    <div class="concepts-container">
-        <div class="concepts-grid">
-            <!-- Box 1: Content Creation -->
-            <div class="concept-box">
-                <div class="concept-icon">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 19l7-7 3 3-7 7-3-3z"/>
-                        <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
-                        <path d="M2 2l7.586 7.586"/>
-                        <path d="M11 11l2 2"/>
-                    </svg>
-                </div>
-                <h3 class="concept-title">Content Creation</h3>
-            </div>
-
-            <!-- Box 2: Search & Visibility -->
-            <div class="concept-box">
-                <div class="concept-icon">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="11" cy="11" r="8"/>
-                        <path d="m21 21-4.3-4.3"/>
-                        <path d="M11 8v6"/>
-                        <path d="M8 11h6"/>
-                    </svg>
-                </div>
-                <h3 class="concept-title">Search & Visibility</h3>
-            </div>
-
-            <!-- Box 3: Social Media Marketing -->
-            <div class="concept-box">
-                <div class="concept-icon">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"/>
-                        <rect x="3" y="3" width="18" height="18" rx="2"/>
-                    </svg>
-                </div>
-                <h3 class="concept-title">Social Media Marketing</h3>
-            </div>
-
-            <!-- Box 4: Analytics & Conversion -->
-            <div class="concept-box">
-                <div class="concept-icon">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M3 3v18h18"/>
-                        <path d="m19 9-5 5-4-4-3 3"/>
-                    </svg>
-                </div>
-                <h3 class="concept-title">Analytics & Conversion</h3>
-            </div>
-
-            <!-- Box 5: Reputation & Review Management -->
-            <div class="concept-box">
-                <div class="concept-icon">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/>
-                    </svg>
-                </div>
-                <h3 class="concept-title">Reputation & Review Management</h3>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Strategy & Planning Section -->
-<section class="strategy-planning">
-    <div class="strategy-container">
-        <!-- Content Div 1 -->
-        <div class="content-div content-1">
-            <div class="content-left">
-                <h3>Data-Backed Strategy & Planning</h3>
-                <p>We don't guess. Every campaign starts with deep market research, competitor analysis, and clear, measurable KPIs.</p>
-                <div class="feature-list">
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 20h9"></path>
-                                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
-                            </svg>
-                        </div>
-                        <p>In-depth audience analysis</p>
+    <!-- Featured Services Section -->
+    <section class="featured-services">
+        <div class="featured-container">
+            <div class="services-columns">
+                <!-- Column 1 -->
+                <div class="service-column column-1">
+                    <div class="service-image-container">
+                        <!-- Replace with your actual image -->
+                        <img src="https://via.placeholder.com/438x322/DE7415/FFFFFF?text=SEO+PPC+Visual"
+                            alt="Search & Visibility" class="service-image">
                     </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                            </svg>
-                        </div>
-                        <p>Competitive landscape review</p>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="8" r="7"></circle>
-                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
-                            </svg>
-                        </div>
-                        <p>Custom KPI & goal setting</p>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                            </svg>
-                        </div>
-                        <p>Full-funnel performance tracking</p>
+                    <div class="service-content">
+                        <h3>Search & Visibility (SEO/PPC)</h3>
+                        <p>Integrate Google, Bing, and more - dominate search results and drive qualified traffic
+                            instantly.</p>
                     </div>
                 </div>
-            </div>
-            <div class="content-right">
-                <img src="https://via.placeholder.com/532x500/1a1a1a/FFFFFF?text=Data+Strategy+Visual" alt="Data-Backed Strategy" class="content-image">
-            </div>
-        </div>
 
-        <!-- Content Div 2 -->
-        <div class="content-div content-2">
-            <div class="content-left">
-                <img src="https://via.placeholder.com/532x500/1a1a1a/FFFFFF?text=Creative+Content+Visual" alt="Creative & Content Excellence" class="content-image">
-            </div>
-            <div class="content-right">
-                <h3>Creative & Content Excellence</h3>
-                <p>From ad copy to blog posts, we create content that captures attention, builds trust, and drives action.</p>
-                <div class="feature-list">
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                            </svg>
-                        </div>
-                        <p>Bold, brand-aligned creative</p>
+                <!-- Column 2 -->
+                <div class="service-column column-2">
+                    <div class="service-image-container">
+                        <!-- Replace with your actual image -->
+                        <img src="https://via.placeholder.com/643x322/0068A6/FFFFFF?text=Content+Social+Marketing"
+                            alt="Content & Social Marketing" class="service-image">
                     </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <line x1="12" y1="16" x2="12" y2="12"></line>
-                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
-                            </svg>
-                        </div>
-                        <p>SEO-optimized content creation</p>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
-                                <line x1="7" y1="2" x2="7" y2="22"></line>
-                                <line x1="17" y1="2" x2="17" y2="22"></line>
-                                <line x1="2" y1="12" x2="22" y2="12"></line>
-                                <line x1="2" y1="7" x2="7" y2="7"></line>
-                                <line x1="2" y1="17" x2="7" y2="17"></line>
-                                <line x1="17" y1="17" x2="22" y2="17"></line>
-                                <line x1="17" y1="7" x2="22" y2="7"></line>
-                            </svg>
-                        </div>
-                        <p>Multi-channel campaign assets</p>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polygon points="23 7 16 12 23 17 23 7"></polygon>
-                                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
-                            </svg>
-                        </div>
-                        <p>Engaging video & visual storytelling</p>
+                    <div class="service-content">
+                        <h3>Content & Social Marketing</h3>
+                        <p>Create engaging content, manage social presence & build communities with a data-driven
+                            approach.</p>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Content Div 3 -->
-        <div class="content-div content-3">
-            <div class="content-left">
-                <h3>Multi-Channel Execution & Management</h3>
-                <p>We meet your audience wherever they are with a unified message across all relevant platforms.</p>
-                <div class="feature-list">
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="11" cy="11" r="8"></circle>
-                                <path d="m21 21-4.3-4.3"></path>
-                            </svg>
-                        </div>
-                        <p>Search (SEO & PPC) management</p>
+    <!-- Featured Services Section - Reversed -->
+    <section class="featured-services reversed">
+        <div class="featured-container">
+            <div class="services-columns reversed-columns">
+                <!-- Column 2 now on left -->
+                <div class="service-column column-2">
+                    <div class="service-image-container">
+                        <!-- Replace with your actual image -->
+                        <img src="https://via.placeholder.com/643x322/0068A6/FFFFFF?text=Content+Social+Marketing"
+                            alt="Content & Social Marketing" class="service-image">
                     </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"></path>
-                                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
-                            </svg>
-                        </div>
-                        <p>Social media advertising & community management</p>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
-                        </div>
-                        <p>Email marketing automation</p>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="12" cy="7" r="4"></circle>
-                            </svg>
-                        </div>
-                        <p>Personal branding coordination</p>
+                    <div class="service-content">
+                        <h3>Content & Social Marketing</h3>
+                        <p>Create engaging content, manage social presence & build communities with a data-driven
+                            approach.</p>
                     </div>
                 </div>
-            </div>
-            <div class="content-right">
-                <img src="https://via.placeholder.com/532x500/1a1a1a/FFFFFF?text=Multi-Channel+Visual" alt="Multi-Channel Execution" class="content-image">
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- Testimonials Section -->
-<section class="testimonials">
-    <div class="testimonials-container">
-        <div class="testimonials-header">
-            <p class="success-text">success story</p>
-            <h2 class="testimonials-title">Hear from our customers<br>& their success stories</h2>
-        </div>
-
-        <div class="testimonials-slider">
-            <div class="slider-wrapper">
-                <div class="testimonials-track" id="testimonialsTrack">
-                    <!-- Testimonial cards will be duplicated for infinite loop -->
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Pricing & Plans Section -->
-<section class="pricing-section">
-    <div class="pricing-container">
-        <!-- Top Section -->
-        <div class="pricing-header">
-            <p class="pricing-label">PRICING & PLANS</p>
-            <h2 class="pricing-title">Choose the Plan That's Right for You</h2>
-        </div>
-
-        <!-- Bottom Section - Plans -->
-        <div class="plans-grid">
-            <!-- Plan 1: Startup -->
-            <div class="plan-card">
-                <div class="plan-header">
-                    <h3 class="plan-name">Startup</h3>
-                    <p class="plan-subtitle">Perfect for new businesses</p>
-                    <div class="plan-price">9,999<span>/m</span></div>
-                    <button class="plan-btn">Choose</button>
-                    <div class="plan-divider"></div>
-                </div>
-                <div class="plan-features">
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                        </div>
-                        <span>8 - Posters</span>
+                <!-- Column 1 now on right -->
+                <div class="service-column column-1">
+                    <div class="service-image-container">
+                        <!-- Replace with your actual image -->
+                        <img src="https://via.placeholder.com/438x322/DE7415/FFFFFF?text=SEO+PPC+Visual"
+                            alt="Search & Visibility" class="service-image">
                     </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                        </div>
-                        <span>4 - Reels Videos</span>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                        </div>
-                        <span>Social Media Account Setup</span>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                        </div>
-                        <span>Ad Campaign (1,00,000 reach)</span>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                        </div>
-                        <span>Social Media Link Organizer Page</span>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                        </div>
-                        <span>3 - Blogs post</span>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                        </div>
-                        <span>Digital Business Analytics</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Plan 2: Business -->
-            <div class="plan-card featured">
-                <div class="plan-badge">Most Popular</div>
-                <div class="plan-header">
-                    <h3 class="plan-name">Business</h3>
-                    <p class="plan-subtitle">For growing companies</p>
-                    <div class="plan-price">49,999<span>/m</span></div>
-                    <button class="plan-btn">Choose</button>
-                    <div class="plan-divider"></div>
-                </div>
-                <div class="plan-features">
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                        </div>
-                        <span>40 - Posters</span>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                        </div>
-                        <span>20 - Reels Videos</span>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                        </div>
-                        <span>Social Media Account Setup</span>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                        </div>
-                        <span>Ad Campaign (5,00,000 reach)</span>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                        </div>
-                        <span>Social Media Link Organizer Page</span>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                        </div>
-                        <span>15 - Blogs post</span>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                        </div>
-                        <span>Digital Business Analytics</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Plan 3: Enterprise -->
-            <div class="plan-card">
-                <div class="plan-header">
-                    <h3 class="plan-name">Enterprise</h3>
-                    <p class="plan-subtitle">For large organizations</p>
-                    <div class="plan-price">Custom</div>
-                    <button class="plan-btn enterprise-btn">Contact Sales</button>
-                    <div class="plan-divider"></div>
-                </div>
-                <div class="plan-features">
-                    <!-- Empty features as specified -->
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-<!-- Getting Started Section -->
-<section class="getting-started">
-    <div class="getting-started-container">
-        <div class="getting-started-header">
-            <p class="getting-started-subtitle">GET STARTED</p>
-            <h3 class="getting-started-title">Launch your growth campaign in three simple steps</h3>
-        </div>
-
-        <div class="steps-grid">
-            <!-- Step 1 -->
-            <div class="step-box">
-                <div class="step-image-container">
-                    <img src="https://via.placeholder.com/350x284/1a1a1a/FFFFFF?text=Select+Trigger" alt="Select a trigger" class="step-image">
-                </div>
-                <div class="step-content">
-                    <h4 class="step-heading">1. Select a trigger</h4>
-                    <p class="step-text">Choose an event or schedule that kicks off your workflow.</p>
-                </div>
-            </div>
-
-            <!-- Step 2 -->
-            <div class="step-box">
-                <div class="step-image-container">
-                    <img src="https://via.placeholder.com/350x284/1a1a1a/FFFFFF?text=Execution+Launch" alt="Execution & Launch" class="step-image">
-                </div>
-                <div class="step-content">
-                    <h4 class="step-heading">2. Execution & Launch</h4>
-                    <p class="step-text">Our team activates the plan across all channels, continuously monitoring performance.</p>
-                </div>
-            </div>
-
-            <!-- Step 3 -->
-            <div class="step-box">
-                <div class="step-image-container">
-                    <img src="https://via.placeholder.com/350x284/1a1a1a/FFFFFF?text=Analyze+Scale" alt="Analyze & Scale" class="step-image">
-                </div>
-                <div class="step-content">
-                    <h4 class="step-heading">3. Analyze & Scale</h4>
-                    <p class="step-text">We turn data into insights and insights into action, optimizing campaigns to scale your success.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- FAQ Section -->
-<section class="faq-section">
-    <div class="faq-container">
-        <div class="faq-columns">
-            <!-- Left Column -->
-            <div class="faq-left">
-                <p class="faq-label">FAQ</p>
-                <h2 class="faq-title">Frequently <br>asked <br>questions</h2>
-                <div class="faq-contact">
-                    <p class="contact-bold">Got any Questions?</p>
-                    <p class="contact-text">Let us know! Reach out and our team will get right back to you.</p>
-                    <button class="contact-btn">Contact us</button>
-                </div>
-            </div>
-
-            <!-- Right Column - Accordion -->
-            <div class="faq-right">
-                <div class="accordion">
-                    <!-- FAQ 1 -->
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            <span>What makes HUMEEN different from other agencies?</span>
-                            <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M6 9l6 6 6-6"/>
-                            </svg>
-                        </button>
-                        <div class="accordion-content">
-                            <p>We blend the art of creative storytelling with the science of data analytics. Our retail and digital experience allows us to craft strategies that not only look great but also deliver tangible, bottom-line results.</p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ 2 -->
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            <span>How do you measure and report on success?</span>
-                            <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M6 9l6 6 6-6"/>
-                            </svg>
-                        </button>
-                        <div class="accordion-content">
-                            <p>You'll have access to a real-time dashboard, and we provide detailed monthly reports that break down performance against your specific KPIs, like ROI, CAC, and LTV.</p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ 3 -->
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            <span>What industries do you specialize in?</span>
-                            <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M6 9l6 6 6-6"/>
-                            </svg>
-                        </button>
-                        <div class="accordion-content">
-                            <p>While our strategies are adaptable, we have deep expertise in Retail, E-commerce, B2B, and Technology.</p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ 4 -->
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            <span>How long does it take to see results?</span>
-                            <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M6 9l6 6 6-6"/>
-                            </svg>
-                        </button>
-                        <div class="accordion-content">
-                            <p>Some channels like PPC can drive traffic immediately. SEO and building brand authority are long-term plays. We'll set clear expectations for each channel from the start.</p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ 5 -->
-                    <div class="accordion-item">
-                        <button class="accordion-header">
-                            <span>Do you work with small businesses / startups?</span>
-                            <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M6 9l6 6 6-6"/>
-                            </svg>
-                        </button>
-                        <div class="accordion-content">
-                            <p>Yes! We offer scalable packages and believe in growing with our clients.</p>
-                        </div>
+                    <div class="service-content">
+                        <h3>Search & Visibility (SEO/PPC)</h3>
+                        <p>Integrate Google, Bing, and more - dominate search results and drive qualified traffic
+                            instantly.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- CTA Section -->
-<section class="cta">
-    <div class="cta-container">
-        <div class="cta-content">
-            <div class="cta-logo">
-                <!-- Replace with your actual logo URL -->
-                <img src="https://via.placeholder.com/150x50/FFFFFF/000000?text=HUMEEN" alt="HUMEEN">
-            </div>
-            
-            <h2 class="cta-text">Power Your Brand with<br>Digital Framework and Business Strategy</h2>
-            
-            <div class="cta-buttons">
-                <button class="cta-btn btn-primary">Contact Today</button>
-                <button class="cta-btn btn-secondary">Learn More</button>
+    <!-- Key Concepts Section -->
+    <section class="key-concepts">
+        <div class="concepts-container">
+            <div class="concepts-grid">
+                <!-- Box 1: Content Creation -->
+                <div class="concept-box">
+                    <div class="concept-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 19l7-7 3 3-7 7-3-3z" />
+                            <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+                            <path d="M2 2l7.586 7.586" />
+                            <path d="M11 11l2 2" />
+                        </svg>
+                    </div>
+                    <h3 class="concept-title">Content Creation</h3>
+                </div>
+
+                <!-- Box 2: Search & Visibility -->
+                <div class="concept-box">
+                    <div class="concept-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="m21 21-4.3-4.3" />
+                            <path d="M11 8v6" />
+                            <path d="M8 11h6" />
+                        </svg>
+                    </div>
+                    <h3 class="concept-title">Search & Visibility</h3>
+                </div>
+
+                <!-- Box 3: Social Media Marketing -->
+                <div class="concept-box">
+                    <div class="concept-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01" />
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                        </svg>
+                    </div>
+                    <h3 class="concept-title">Social Media Marketing</h3>
+                </div>
+
+                <!-- Box 4: Analytics & Conversion -->
+                <div class="concept-box">
+                    <div class="concept-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M3 3v18h18" />
+                            <path d="m19 9-5 5-4-4-3 3" />
+                        </svg>
+                    </div>
+                    <h3 class="concept-title">Analytics & Conversion</h3>
+                </div>
+
+                <!-- Box 5: Reputation & Review Management -->
+                <div class="concept-box">
+                    <div class="concept-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3" />
+                        </svg>
+                    </div>
+                    <h3 class="concept-title">Reputation & Review Management</h3>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- Strategy & Planning Section -->
+    <section class="strategy-planning">
+        <div class="strategy-container">
+            <!-- Content Div 1 -->
+            <div class="content-div content-1">
+                <div class="content-left">
+                    <h3>Data-Backed Strategy & Planning</h3>
+                    <p>We don't guess. Every campaign starts with deep market research, competitor analysis, and clear,
+                        measurable KPIs.</p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M12 20h9"></path>
+                                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                                </svg>
+                            </div>
+                            <p>In-depth audience analysis</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                                </svg>
+                            </div>
+                            <p>Competitive landscape review</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="8" r="7"></circle>
+                                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                                </svg>
+                            </div>
+                            <p>Custom KPI & goal setting</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                                </svg>
+                            </div>
+                            <p>Full-funnel performance tracking</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-right">
+                    <img src="https://via.placeholder.com/532x500/1a1a1a/FFFFFF?text=Data+Strategy+Visual"
+                        alt="Data-Backed Strategy" class="content-image">
+                </div>
+            </div>
+
+            <!-- Content Div 2 -->
+            <div class="content-div content-2">
+                <div class="content-left">
+                    <img src="https://via.placeholder.com/532x500/1a1a1a/FFFFFF?text=Creative+Content+Visual"
+                        alt="Creative & Content Excellence" class="content-image">
+                </div>
+                <div class="content-right">
+                    <h3>Creative & Content Excellence</h3>
+                    <p>From ad copy to blog posts, we create content that captures attention, builds trust, and drives
+                        action.</p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <p>Bold, brand-aligned creative</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                                </svg>
+                            </div>
+                            <p>SEO-optimized content creation</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
+                                    <line x1="7" y1="2" x2="7" y2="22"></line>
+                                    <line x1="17" y1="2" x2="17" y2="22"></line>
+                                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                                    <line x1="2" y1="7" x2="7" y2="7"></line>
+                                    <line x1="2" y1="17" x2="7" y2="17"></line>
+                                    <line x1="17" y1="17" x2="22" y2="17"></line>
+                                    <line x1="17" y1="7" x2="22" y2="7"></line>
+                                </svg>
+                            </div>
+                            <p>Multi-channel campaign assets</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                                    <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                                </svg>
+                            </div>
+                            <p>Engaging video & visual storytelling</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Div 3 -->
+            <div class="content-div content-3">
+                <div class="content-left">
+                    <h3>Multi-Channel Execution & Management</h3>
+                    <p>We meet your audience wherever they are with a unified message across all relevant platforms.</p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <path d="m21 21-4.3-4.3"></path>
+                                </svg>
+                            </div>
+                            <p>Search (SEO & PPC) management</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01">
+                                    </path>
+                                    <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                                </svg>
+                            </div>
+                            <p>Social media advertising & community management</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <p>Email marketing automation</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                            <p>Personal branding coordination</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-right">
+                    <img src="https://via.placeholder.com/532x500/1a1a1a/FFFFFF?text=Multi-Channel+Visual"
+                        alt="Multi-Channel Execution" class="content-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <div class="testimonials-header">
+                <p class="success-text">success story</p>
+                <h2 class="testimonials-title">Hear from our customers<br>& their success stories</h2>
+            </div>
+
+            <div class="testimonials-slider">
+                <div class="slider-wrapper">
+                    <div class="testimonials-track" id="testimonialsTrack">
+                        <!-- Testimonial cards will be duplicated for infinite loop -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing & Plans Section -->
+    <section class="pricing-section">
+        <div class="pricing-container">
+            <!-- Top Section -->
+            <div class="pricing-header">
+                <p class="pricing-label">PRICING & PLANS</p>
+                <h2 class="pricing-title">Choose the Plan That's Right for You</h2>
+            </div>
+
+            <!-- Bottom Section - Plans -->
+            <div class="plans-grid">
+                <!-- Plan 1: Startup -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3 class="plan-name">Startup</h3>
+                        <p class="plan-subtitle">Perfect for new businesses</p>
+                        <div class="plan-price">9,999<span>/m</span></div>
+                        <button class="plan-btn">Choose</button>
+                        <div class="plan-divider"></div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>8 - Posters</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>4 - Reels Videos</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>Social Media Account Setup</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>Ad Campaign (1,00,000 reach)</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>Social Media Link Organizer Page</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>3 - Blogs post</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>Digital Business Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan 2: Business -->
+                <div class="plan-card featured">
+                    <div class="plan-badge">Most Popular</div>
+                    <div class="plan-header">
+                        <h3 class="plan-name">Business</h3>
+                        <p class="plan-subtitle">For growing companies</p>
+                        <div class="plan-price">49,999<span>/m</span></div>
+                        <button class="plan-btn">Choose</button>
+                        <div class="plan-divider"></div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>40 - Posters</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>20 - Reels Videos</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>Social Media Account Setup</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>Ad Campaign (5,00,000 reach)</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>Social Media Link Organizer Page</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>15 - Blogs post</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>Digital Business Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plan 3: Enterprise -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3 class="plan-name">Enterprise</h3>
+                        <p class="plan-subtitle">For large organizations</p>
+                        <div class="plan-price">Custom</div>
+                        <button class="plan-btn enterprise-btn">Contact Sales</button>
+                        <div class="plan-divider"></div>
+                    </div>
+                    <div class="plan-features">
+                        <!-- Empty features as specified -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Getting Started Section -->
+    <section class="getting-started">
+        <div class="getting-started-container">
+            <div class="getting-started-header">
+                <p class="getting-started-subtitle">GET STARTED</p>
+                <h3 class="getting-started-title">Launch your growth campaign in three simple steps</h3>
+            </div>
+
+            <div class="steps-grid">
+                <!-- Step 1 -->
+                <div class="step-box">
+                    <div class="step-image-container">
+                        <img src="https://via.placeholder.com/350x284/1a1a1a/FFFFFF?text=Select+Trigger"
+                            alt="Select a trigger" class="step-image">
+                    </div>
+                    <div class="step-content">
+                        <h4 class="step-heading">1. Select a trigger</h4>
+                        <p class="step-text">Choose an event or schedule that kicks off your workflow.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step-box">
+                    <div class="step-image-container">
+                        <img src="https://via.placeholder.com/350x284/1a1a1a/FFFFFF?text=Execution+Launch"
+                            alt="Execution & Launch" class="step-image">
+                    </div>
+                    <div class="step-content">
+                        <h4 class="step-heading">2. Execution & Launch</h4>
+                        <p class="step-text">Our team activates the plan across all channels, continuously monitoring
+                            performance.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step-box">
+                    <div class="step-image-container">
+                        <img src="https://via.placeholder.com/350x284/1a1a1a/FFFFFF?text=Analyze+Scale"
+                            alt="Analyze & Scale" class="step-image">
+                    </div>
+                    <div class="step-content">
+                        <h4 class="step-heading">3. Analyze & Scale</h4>
+                        <p class="step-text">We turn data into insights and insights into action, optimizing campaigns
+                            to scale your success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <div class="faq-columns">
+                <!-- Left Column -->
+                <div class="faq-left">
+                    <p class="faq-label">FAQ</p>
+                    <h2 class="faq-title">Frequently <br>asked <br>questions</h2>
+                    <div class="faq-contact">
+                        <p class="contact-bold">Got any Questions?</p>
+                        <p class="contact-text">Let us know! Reach out and our team will get right back to you.</p>
+                        <button class="contact-btn">Contact us</button>
+                    </div>
+                </div>
+
+                <!-- Right Column - Accordion -->
+                <div class="faq-right">
+                    <div class="accordion">
+                        <!-- FAQ 1 -->
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>What makes HUMEEN different from other agencies?</span>
+                                <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <p>We blend the art of creative storytelling with the science of data analytics. Our
+                                    retail and digital experience allows us to craft strategies that not only look great
+                                    but also deliver tangible, bottom-line results.</p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>How do you measure and report on success?</span>
+                                <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <p>You'll have access to a real-time dashboard, and we provide detailed monthly reports
+                                    that break down performance against your specific KPIs, like ROI, CAC, and LTV.</p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>What industries do you specialize in?</span>
+                                <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <p>While our strategies are adaptable, we have deep expertise in Retail, E-commerce,
+                                    B2B, and Technology.</p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>How long does it take to see results?</span>
+                                <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Some channels like PPC can drive traffic immediately. SEO and building brand
+                                    authority are long-term plays. We'll set clear expectations for each channel from
+                                    the start.</p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>Do you work with small businesses / startups?</span>
+                                <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Yes! We offer scalable packages and believe in growing with our clients.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-container">
+            <div class="cta-content">
+                <div class="cta-logo">
+                    <!-- Replace with your actual logo URL -->
+                    <img src="https://via.placeholder.com/150x50/FFFFFF/000000?text=HUMEEN" alt="HUMEEN">
+                </div>
+
+                <h2 class="cta-text">Power Your Brand with<br>Digital Framework and Business Strategy</h2>
+
+                <div class="cta-buttons">
+                    <button class="cta-btn btn-primary">Contact Today</button>
+                    <button class="cta-btn btn-secondary">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Add this right before </body> tag -->
 
@@ -821,4 +944,5 @@ Favorite Metrics
         </div>
     </footer>
 </body>
+
 </html>

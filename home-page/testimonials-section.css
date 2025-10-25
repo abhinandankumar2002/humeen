@@ -88,10 +88,10 @@
         bottom: 0;
         border: 1px solid transparent;
         border-radius: 20px;
-        background: linear-gradient(135deg, 
-            rgba(222, 116, 21, 0.1) 0%, 
-            rgba(111, 110, 94, 0.1) 50%, 
-            rgba(0, 104, 166, 0.1) 100%);
+        background: linear-gradient(135deg,
+                rgba(222, 116, 21, 0.1) 0%,
+                rgba(111, 110, 94, 0.1) 50%,
+                rgba(0, 104, 166, 0.1) 100%);
         mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
         mask-composite: exclude;
         -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -177,8 +177,10 @@
         0% {
             transform: translateX(0);
         }
+
         100% {
-            transform: translateX(calc(-364px * 9 - 24px * 8)); /* Move by total width of all cards */
+            transform: translateX(calc(-364px * 9 - 24px * 8));
+            /* Move by total width of all cards */
         }
     }
 
@@ -256,6 +258,7 @@
             0% {
                 transform: translateX(0);
             }
+
             100% {
                 transform: translateX(calc(-320px * 9 - 24px * 8));
             }
@@ -286,6 +289,7 @@
             0% {
                 transform: translateX(0);
             }
+
             100% {
                 transform: translateX(calc(-280px * 9 - 24px * 8));
             }
