@@ -1,0 +1,190 @@
+    /* About Section Styles */
+    .about-section {
+        width: 100%;
+        padding: 100px 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .about-container {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0 20px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .about-content {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-label {
+        font-size: 16px;
+        font-weight: 700;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+
+    .about-title {
+        font-size: 72px;
+        font-weight: 700;
+        color: white;
+    }
+
+    .about-subheading {
+        font-size: 24px;
+        color: rgba(255, 255, 255, 0.9);
+        line-height: 1.6;
+        margin: 0 0 50px 0;
+        max-width: 600px;
+    }
+
+    .about-btn {
+        width: 177px;
+        height: 50px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background: transparent;
+        color: white;
+        border: 1px solid;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .about-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(222, 116, 21, 0.3);
+    }
+
+    .about-btn:hover::before {
+        left: 0;
+    }
+
+    .about-btn:hover {
+        color: white;
+    }
+
+    /* Floating animation for background elements */
+    .about-section::after {
+        content: '';
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(222, 116, 21, 0.1) 0%, transparent 70%);
+        top: 20%;
+        left: 10%;
+        animation: float 6s ease-in-out infinite;
+    }
+
+    .about-section::before {
+        animation: float 8s ease-in-out infinite reverse;
+    }
+
+    @keyframes float {
+
+        0%,
+        100% {
+            transform: translateY(0px) translateX(0px);
+        }
+
+        50% {
+            transform: translateY(-20px) translateX(10px);
+        }
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 1200px) {
+        .about-container {
+            max-width: 95%;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .about-title {
+            font-size: 60px;
+        }
+
+        .about-subheading {
+            font-size: 22px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .about-section {
+            padding: 80px 0;
+        }
+
+        .about-title {
+            font-size: 48px;
+        }
+
+        .about-subheading {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        .about-label {
+            font-size: 15px;
+        }
+
+        .about-btn {
+            width: 160px;
+            height: 48px;
+            font-size: 15px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .about-section {
+            padding: 60px 0;
+        }
+
+        .about-title {
+            font-size: 36px;
+        }
+
+        .about-subheading {
+            font-size: 18px;
+            margin-bottom: 35px;
+        }
+
+        .about-label {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .about-btn {
+            width: 150px;
+            height: 46px;
+            font-size: 14px;
+        }
+
+        .about-section::after {
+            width: 150px;
+            height: 150px;
+            top: 15%;
+            left: 5%;
+        }
+    }
+
+    @media (max-width: 380px) {
+        .about-title {
+            font-size: 32px;
+        }
+
+        .about-subheading {
+            font-size: 16px;
+        }
+    }

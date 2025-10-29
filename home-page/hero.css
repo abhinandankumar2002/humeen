@@ -202,7 +202,7 @@
   height: 50px;
   border: none;
   border-radius: 8px;
-  background: linear-gradient(90deg, #FF5900 0%, #134B9D 100%);
+  background: #ffffff50;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -231,112 +231,6 @@
   font-weight: bold;
   color: white;
   margin: 0;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 1200px) {
-  .hero-container {
-    max-width: 95%;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero {
-    min-height: 80vh;
-    padding: 60px 0;
-  }
-
-  .hero-badge {
-    width: 220px;
-    height: 55px;
-  }
-
-  .inner-hero-badge {
-    width: 210px;
-    height: 48px;
-  }
-
-  .inner-hero-badge p {
-    font-size: 20px;
-  }
-}
-
-.hero-title {
-  font-size: 128px;
-  margin-bottom: 20px;
-}
-
-.hero-description {
-  font-size: 17px;
-  margin-bottom: 40px;
-}
-
-.btn {
-  width: 200px;
-}
-
-@media (max-width: 480px) {
-  .hero-title {
-    font-size: 36px;
-  }
-
-  .hero-badge {
-    width: 180px;
-    height: 50px;
-  }
-
-  .inner-hero-badge {
-    width: 170px;
-    height: 44px;
-  }
-
-  .inner-hero-badge p {
-    font-size: 16px;
-  }
-
-  .btn {
-    width: 100%;
-    max-width: 200px;
-  }
-}
-
-.hero-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-/* ✅ Tablet (<= 768px) */
-@media (max-width: 768px) {
-  .hero-btn {
-    width: 220px;
-    height: 55px;
-  }
-
-  .inner-hero-btn {
-    width: 210px;
-    height: 48px;
-  }
-
-  .inner-hero-btn p {
-    font-size: 20px;
-  }
-}
-
-/* ✅ Mobile (<= 480px) */
-@media (max-width: 480px) {
-  .hero-btn {
-    width: 180px;
-    height: 50px;
-  }
-
-  .inner-hero-btn {
-    width: 170px;
-    height: 44px;
-  }
-
-  .inner-hero-btn p {
-    font-size: 16px;
-  }
 }
 
 .nav-btn {
@@ -415,4 +309,169 @@
 /* ✅ Keep the hero container from extending */
 .hero {
   overflow: hidden;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: 72px;
+  }
+
+  .hero-animation {
+    right: -15%;
+    width: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 0;
+    min-height: 80vh;
+  }
+
+  .hero-container {
+    padding: 0 15px;
+  }
+
+  .hero-title {
+    font-size: 52px;
+    text-align: center;
+    margin: 0 0 20px 0;
+  }
+
+  .hero-badge {
+    width: 220px;
+    height: 55px;
+    margin: 0 auto;
+  }
+
+  .inner-hero-badge {
+    width: 216px;
+    height: 51px;
+  }
+
+  .inner-hero-badge p {
+    font-size: 20px;
+  }
+
+  .hero-description {
+    font-size: 17px;
+    text-align: center;
+    margin: 0 0 40px 0;
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero-animation {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: 80%;
+    max-width: 400px;
+    margin: 30px auto 0;
+    transform: translateY(0);
+  }
+
+  .hero-btn,
+  .view-btn {
+    width: 160px;
+    height: 45px;
+  }
+
+  .inner-hero-btn,
+  .inner-view-btn {
+    width: 158px;
+    height: 43px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-animation{
+    display: none;
+  }
+  .key-concepts {
+    display: none;
+  }
+  .hero {
+    background-image: url('hero-bg-mobile.png');
+    overflow: hidden;
+    padding: 40px 0;
+    min-height: 70vh;
+  }
+
+  .hero-container {
+    padding: 0 10px;
+  }
+
+  .hero-title {
+    margin-top: 30%;
+    font-size: 45px;
+  }
+
+  .hero-badge {
+    width: 343px;
+    height: 28px;
+    border-radius: 12px;
+  }
+
+  .inner-hero-badge {
+    width: 341px;
+    height: 26px;
+    border-radius: 12px;
+  }
+
+  .inner-hero-badge p {
+    font-size: 16px;
+  }
+
+  .hero-description {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .hero-buttons {
+    margin-top: 30%;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .hero-btn,
+  .view-btn {
+    width: 343px;
+    height: 44px;
+  }
+
+  .inner-hero-btn,
+  .inner-view-btn {
+    width: calc(100% - 2px);
+    height: 42px;
+  }
+
+  .inner-hero-btn p,
+  .inner-view-btn p {
+    font-size: 15px;
+  }
+
+  .hero-animation {
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto 0;
+  }
+
+  .hero-animation img {
+    animation: spin 30s linear infinite;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 200px;
+    height: 44px;
+  }
 }

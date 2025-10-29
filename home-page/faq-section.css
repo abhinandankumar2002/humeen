@@ -139,7 +139,7 @@
 }
 
 .accordion-header:hover {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.0.5);
 }
 
 .accordion-icon {
@@ -168,16 +168,6 @@
     font-size: 16px;
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.6;
-}
-
-/* Active state styling */
-.accordion-item.active {
-    border-color: rgba(255, 255, 255, 0.1);
-    background: rgba(255, 255, 255, 0.1);
-}
-
-.accordion-item.active .accordion-header {
-    color: #ffffff;
 }
 
 /* Mobile Responsiveness */

@@ -235,10 +235,21 @@
      justify-content: center;
  }
 
+ .plan-section h2 {
+     color: #fff;
+     font-size: 64px;
+     font-weight: 500;
+ }
+
+
  /* Mobile Responsiveness */
  @media (max-width: 1200px) {
      .pricing-container {
          max-width: 95%;
+     }
+
+     .plan-section h2 {
+         font-size: 56px;
      }
 
      .plans-grid {
@@ -275,6 +286,12 @@
          padding: 60px 0;
      }
 
+     .plan-section h2 {
+         font-size: 42px;
+         text-align: center;
+         padding: 0 20px;
+     }
+
      .pricing-header {
          margin-bottom: 50px;
      }
@@ -305,6 +322,13 @@
  @media (max-width: 480px) {
      .pricing-title {
          font-size: 36px;
+     }
+
+     .plan-section h2 {
+         font-size: 32px;
+         text-align: center;
+         padding: 0 15px;
+         line-height: 1.2;
      }
 
      .pricing-label {
