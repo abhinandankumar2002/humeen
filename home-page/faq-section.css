@@ -44,7 +44,7 @@
 
 .faq-label {
     font-size: 16px;
-    color: #DE7415;
+    color: #ffffff;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -57,10 +57,6 @@
     color: white;
     line-height: 1.1;
     margin: 0;
-    background: linear-gradient(90deg, #DE7415 0%, #6F6E5E 50%, #0068A6 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
 }
 
 .faq-contact {
@@ -92,8 +88,7 @@
     transition: all 0.3s ease;
     background: transparent;
     color: white;
-    border: 1px solid;
-    border-image: linear-gradient(90deg, #DE7415 0%, #6F6E5E 78%, #0068A6 100%) 1;
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .contact-btn:hover {
@@ -177,12 +172,12 @@
 
 /* Active state styling */
 .accordion-item.active {
-    border-color: rgba(222, 116, 21, 0.4);
-    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .accordion-item.active .accordion-header {
-    color: #DE7415;
+    color: #ffffff;
 }
 
 /* Mobile Responsiveness */

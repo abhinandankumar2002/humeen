@@ -589,3 +589,103 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Customer logos data - easily extendable
+    const customerLogos = [
+        { type: 'text', content: 'Company A' },
+        { type: 'text', content: 'Brand B' },
+        { type: 'text', content: 'Enterprise C' },
+        { type: 'text', content: 'Startup D' },
+        { type: 'text', content: 'Corporation E' },
+        { type: 'text', content: 'Business F' },
+        { type: 'text', content: 'Organization G' }
+        // Add more logos here as needed
+        // Example for images:
+        // { type: 'image', src: 'path-to-logo.png', alt: 'Company Name' }
+    ];
+
+    const sliderTrack = document.getElementById('sliderTrack');
+
+    // Function to create logo element
+    function createLogoElement(logo) {
+        const logoItem = document.createElement('div');
+        logoItem.className = 'logo-item';
+
+        if (logo.type === 'text') {
+            const textElement = document.createElement('p');
+            textElement.className = 'logo-text';
+            textElement.textContent = logo.content;
+            logoItem.appendChild(textElement);
+        } else if (logo.type === 'image') {
+            const imgElement = document.createElement('img');
+            imgElement.className = 'logo-image';
+            imgElement.src = logo.src;
+            imgElement.alt = logo.alt;
+            logoItem.appendChild(imgElement);
+        }
+
+        return logoItem;
+    }
+
+    // Function to initialize slider
+    function initSlider() {
+        // Clear existing content
+        sliderTrack.innerHTML = '';
+
+        // Create multiple sets for seamless looping
+        const setsToCreate = 3; // Creates 3 identical sets for smooth looping
+
+        for (let set = 0; set < setsToCreate; set++) {
+            customerLogos.forEach(logo => {
+                const logoElement = createLogoElement(logo);
+                sliderTrack.appendChild(logoElement);
+            });
+        }
+
+        // Update animation duration based on number of logos
+        updateAnimationDuration();
+    }
+
+    // Function to update animation duration based on logo count
+    function updateAnimationDuration() {
+        const logoCount = customerLogos.length;
+        const duration = logoCount * 4; // 4 seconds per logo
+        document.styleSheets[0].insertRule(`
+                @keyframes slide {
+                    0% { transform: translateX(0); }
+                    100% { transform: translateX(calc(-${150 + 60}px * ${logoCount})); }
+                }
+            `, document.styleSheets[0].cssRules.length);
+    }
+
+    // Function to add new logo
+    function addLogo(logoData) {
+        customerLogos.push(logoData);
+        initSlider(); // Reinitialize with new data
+    }
+
+    // Function to remove logo by index
+    function removeLogo(index) {
+        if (index >= 0 && index < customerLogos.length) {
+            customerLogos.splice(index, 1);
+            initSlider(); // Reinitialize with updated data
+        }
+    }
+
+    // Function to get all logos
+    function getLogos() {
+        return [...customerLogos];
+    }
+
+    // Initialize the slider
+    initSlider();
+
+    // Make functions available globally for easy management
+    window.customerSlider = {
+        addLogo,
+        removeLogo,
+        getLogos,
+        initSlider
+    };
+});

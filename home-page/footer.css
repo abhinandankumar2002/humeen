@@ -1,17 +1,16 @@
         /* Footer Styles */
         .footer {
-            color: white;
-            margin: 60px;
-        }
-
-        .footer-container {
             width: 100%;
+            margin-bottom: 20%;
+        }
+        .footer-container {
+            width: 1140px;
             margin: 0 auto;
             padding: 40px 20px 20px;
-            background: rgba(255, 255, 255, 0);
+            background: rgb(0, 0, 0);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
-            border-radius: 12px;
+            border-radius: 16px;
             border: 1px solid rgba(255, 255, 255, 0.18);
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
         }
