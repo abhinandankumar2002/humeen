@@ -40,7 +40,8 @@
         margin-bottom: 20px;
     }
 
-    .getting-started-title ,h3{
+    .getting-started-title,
+    h3 {
         font-size: 48px;
         font-weight: 700;
         color: white;
@@ -117,168 +118,178 @@
         line-height: 1.6;
         margin: 0;
     }
-/* Getting Started Section Responsive Styles */
-@media (max-width: 1200px) {
-    .getting-started {
-        padding: 80px 0;
-    }
-    
-    .getting-started-container {
-        max-width: 960px;
-        padding: 0 30px;
-    }
-    
-    .getting-started-title, .getting-started-title h3 {
-        font-size: 42px !important;
-    }
-    
-    .steps-grid {
-        gap: 25px;
-    }
-    
-    .step-box {
-        width: 100%;
-        max-width: 320px;
-        height: 420px;
-        margin: 0 auto;
-    }
-    
-    .step-image-container {
-        width: 100%;
-        max-width: 306px;
-        height: 260px;
-    }
-}
 
-@media (max-width: 768px) {
-    .getting-started {
-        padding: 60px 0;
-    }
-    
-    .getting-started-header {
-        margin-bottom: 50px;
-        padding: 0 20px;
-    }
-    
-    .getting-started-title, .getting-started-title h3 {
-        font-size: 36px !important;
-    }
-    
-    .getting-started-subtitle {
-        font-size: 14px !important;
-        margin-bottom: 15px;
-    }
-    
-    .steps-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        max-width: 500px;
-        margin: 0 auto;
-    }
-    
-    .step-box {
-        width: 100%;
-        max-width: 400px;
-        height: auto;
-        min-height: 400px;
-        margin: 0 auto;
-    }
-    
-    .step-image-container {
-        width: 100%;
-        max-width: none;
-        height: 250px;
-    }
-    
-    .step-heading {
-        font-size: 22px;
-        margin-bottom: 12px;
-    }
-    
-    .step-text {
-        font-size: 15px;
-    }
-    
     .start-badge {
-        width: 140px;
+        background: linear-gradient(90deg, #FF5900 0%, #134B9D 100%);
+        width: 147px;
+        height: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 9999px;
+    }
+
+    .start-inner-badge {
+        background: black;
+        width: 145px;
         height: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 9999px;
     }
-    
-    .start-inner-badge {
-        width: 138px;
-        height: 24px;
-    }
-}
 
-@media (max-width: 480px) {
-    .getting-started {
-        padding: 40px 0;
+    .services-subtitle {
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        margin: 0;
     }
-    
-    .getting-started-container {
-        padding: 0 15px;
+
+    /* Getting Started Section Responsive Styles */
+    @media (max-width: 1200px) {
+        .getting-started {
+            padding: 80px 0;
+        }
+
+        .getting-started-container {
+            max-width: 960px;
+            padding: 0 30px;
+        }
+
+        .getting-started-title,
+        .getting-started-title h3 {
+            font-size: 42px !important;
+        }
+
+        .steps-grid {
+            gap: 25px;
+        }
+
+        .step-box {
+            width: 100%;
+            max-width: 320px;
+            height: 420px;
+            margin: 0 auto;
+        }
+
+        .step-image-container {
+            width: 100%;
+            max-width: 306px;
+            height: 260px;
+        }
     }
-    
-    .getting-started-header {
-        margin-bottom: 40px;
-        padding: 0 10px;
-    }
-    
-    .getting-started-title, .getting-started-title h3 {
-        font-size: 28px !important;
-    }
-    
-    .getting-started-subtitle {
-        font-size: 13px !important;
-        letter-spacing: 1px;
-        margin-bottom: 12px;
-    }
-    
-    .steps-grid {
-        gap: 25px;
-        max-width: 100%;
-    }
-    
-    .step-box {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        min-height: 380px;
-        padding: 5px;
-    }
-    
-    .step-image-container {
-        height: 200px;
-        margin-bottom: 20px;
-    }
-    
-    .step-content {
-        padding: 0 12px;
-    }
-    
-    .step-heading {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-    
-    .step-text {
-        font-size: 14px;
-        line-height: 1.5;
-    }
-    
-    .start-badge {
-        width: 130px;
-        height: 24px;
-        margin-bottom: 12px;
-    }
-    
-    .start-inner-badge {
-        width: 128px;
-        height: 22px;
-    }
-    
-    /* Adjust hover effects for mobile */
-    .step-box:hover {
-        transform: translateY(-5px);
+
+    @media (max-width: 768px) {
+        .getting-started {
+            padding: 60px 0;
+        }
+
+        .getting-started-header {
+            margin-bottom: 50px;
+            padding: 0 20px;
+        }
+
+        .getting-started-title,
+        .getting-started-title h3 {
+            font-size: 36px !important;
+        }
+
+        .getting-started-subtitle {
+            font-size: 14px !important;
+            margin-bottom: 15px;
+        }
+
+        .steps-grid {
+            grid-template-columns: 1fr;
+            gap: 30px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .step-box {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            min-height: 400px;
+            margin: 0 auto;
+        }
+
+        .step-image-container {
+            width: 100%;
+            max-width: none;
+            height: 250px;
+        }
+
+        .step-heading {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .step-text {
+            font-size: 15px;
+        }
+
+    @media (max-width: 480px) {
+        .getting-started {
+            padding: 40px 0;
+        }
+
+        .getting-started-container {
+            padding: 0 15px;
+        }
+
+        .getting-started-header {
+            margin-bottom: 40px;
+            padding: 0 10px;
+        }
+
+        .getting-started-title,
+        .getting-started-title h3 {
+            font-size: 28px !important;
+        }
+
+        .getting-started-subtitle {
+            font-size: 13px !important;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        .steps-grid {
+            gap: 25px;
+            max-width: 100%;
+        }
+
+        .step-box {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            min-height: 380px;
+            padding: 5px;
+        }
+
+        .step-image-container {
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        .step-content {
+            padding: 0 12px;
+        }
+
+        .step-heading {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .step-text {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* Adjust hover effects for mobile */
+        .step-box:hover {
+            transform: translateY(-5px);
+        }
     }
 }
