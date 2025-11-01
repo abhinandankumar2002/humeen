@@ -115,10 +115,12 @@
 
 .hero-buttons {
   display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 .hero-btn {
@@ -373,12 +375,14 @@
 }
 
 @media (max-width: 480px) {
-  .hero-animation{
+  .hero-animation {
     display: none;
   }
+
   .key-concepts {
     display: none;
   }
+
   .hero {
     background-image: url('../images/hero-bg-mobile.png');
     overflow: hidden;
