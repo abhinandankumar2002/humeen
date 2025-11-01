@@ -8,7 +8,8 @@
   justify-content: center;
   padding: 80px 0;
   background-color: #0000;
-  background-image: url('gradient-transparent-bg-hero.png');
+  background-image: url('../images/gradient-transparent-bg-last.png');
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -379,7 +380,7 @@
     display: none;
   }
   .hero {
-    background-image: url('hero-bg-mobile.png');
+    background-image: url('../images/hero-bg-mobile.png');
     overflow: hidden;
     padding: 40px 0;
     min-height: 70vh;
