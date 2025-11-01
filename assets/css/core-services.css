@@ -96,16 +96,6 @@
     margin-bottom: 50px;
   }
 
-  .services-badge {
-    width: 240px;
-    height: 26px;
-  }
-
-  .inner-badge {
-    width: 230px;
-    height: 20px;
-  }
-
   .services-title {
     font-size: 36px;
   }
@@ -116,15 +106,6 @@
 }
 
 @media (max-width: 480px) {
-  .services-badge {
-    width: 200px;
-    height: 24px;
-  }
-
-  .inner-badge {
-    width: 190px;
-    height: 18px;
-  }
 
   .services-title {
     font-size: 28px;
