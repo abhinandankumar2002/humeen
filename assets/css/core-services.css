@@ -88,9 +88,6 @@
 }
 
 @media (max-width: 768px) {
-  .core-services {
-    padding: 60px 0;
-  }
 
   .services-header {
     margin-bottom: 50px;

@@ -140,9 +140,6 @@
     }
 
     @media (max-width: 768px) {
-        .featured-services.reversed {
-            padding: 60px 0;
-        }
 
         .service-column {
             min-height: 450px;

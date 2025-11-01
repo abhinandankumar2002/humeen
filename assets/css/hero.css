@@ -396,17 +396,17 @@
 
   .hero-title {
     margin-top: 30%;
-    font-size: 45px;
+    font-size: 40px;
   }
 
   .hero-badge {
-    width: 343px;
+    width: 340px;
     height: 28px;
     border-radius: 12px;
   }
 
   .inner-hero-badge {
-    width: 341px;
+    width: 338px;
     height: 26px;
     border-radius: 12px;
   }
