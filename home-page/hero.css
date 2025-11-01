@@ -252,24 +252,6 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-.inner-nav-btn {
-  width: 112px;
-  height: 33px;
-  background: black;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.inner-nav-btn p {
-  font-size: 16px;
-  font-weight: bold;
-  color: white;
-  margin: 0;
-}
-
-
 /* === Hero Animation Styles === */
 .hero-animation {
   position: absolute;
