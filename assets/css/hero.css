@@ -236,25 +236,6 @@
   margin: 0;
 }
 
-.nav-btn {
-  width: 117px;
-  height: 38px;
-  border: none;
-  border-radius: 8px;
-  background: linear-gradient(90deg, #FF5900 0%, #134B9D 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  padding: 0;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.nav-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
 /* === Hero Animation Styles === */
 .hero-animation {
   position: absolute;
