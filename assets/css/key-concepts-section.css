@@ -123,7 +123,7 @@
 
     .concept-title {
         font-size: 16px;
-        font-weight: 600;
+        font-weight: 400;
         color: white;
         margin: 0;
         line-height: 1.4;
@@ -148,9 +148,33 @@
         }
 
         .concept-box {
-            width: 150px;
-            height: 150px;
-        }
+        width: 150px;
+        height: 150px;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(90deg, #FF5900 0%, #134B9D 100%);
+        backdrop-filter: blur(10px);
+        transition: all 0.4s ease;
+        position: relative;
+        overflow: hidden;
+        text-align: left;
+    }
+
+    .inner-concept-box {
+        width: 148px;
+        height: 148px;
+        background: black;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 15px;
+        box-sizing: border-box;
+    }
     }
 
     @media (max-width: 768px) {
@@ -164,10 +188,33 @@
         }
 
         .concept-box {
-            width: 150px;
-            height: 150px;
-            margin: 0 auto;
-        }
+        width: 150px;
+        height: 150px;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(90deg, #FF5900 0%, #134B9D 100%);
+        backdrop-filter: blur(10px);
+        transition: all 0.4s ease;
+        position: relative;
+        overflow: hidden;
+        text-align: left;
+    }
+
+    .inner-concept-box {
+        width: 148px;
+        height: 148px;
+        background: black;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 15px;
+        box-sizing: border-box;
+    }
 
         .concept-icon {
             width: 40px;
@@ -187,10 +234,33 @@
         }
 
         .concept-box {
-            width: 150px;
-            height: 150px;
-            padding: 20px 15px;
-        }
+        width: 150px;
+        height: 150px;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(90deg, #FF5900 0%, #134B9D 100%);
+        backdrop-filter: blur(10px);
+        transition: all 0.4s ease;
+        position: relative;
+        overflow: hidden;
+        text-align: left;
+    }
+
+    .inner-concept-box {
+        width: 148px;
+        height: 148px;
+        background: black;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 15px;
+        box-sizing: border-box;
+    }
 
         .concept-icon {
             width: 36px;
@@ -205,9 +275,33 @@
 
     @media (max-width: 380px) {
         .concept-box {
-            width: 150px;
-            height: 150px;
-        }
+        width: 150px;
+        height: 150px;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(90deg, #FF5900 0%, #134B9D 100%);
+        backdrop-filter: blur(10px);
+        transition: all 0.4s ease;
+        position: relative;
+        overflow: hidden;
+        text-align: left;
+    }
+
+    .inner-concept-box {
+        width: 148px;
+        height: 148px;
+        background: black;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 15px;
+        box-sizing: border-box;
+    }
 
         .concept-icon {
             width: 32px;

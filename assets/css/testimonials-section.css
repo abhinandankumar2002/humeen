@@ -31,7 +31,7 @@
 
     .success-text {
         font-size: 20px;
-        font-weight: 700;
+        font-weight: 400;
         color: #ffffff;
         text-transform: uppercase;
         letter-spacing: 2px;
@@ -40,7 +40,7 @@
 
     .testimonials-title {
         font-size: 60px;
-        font-weight: 600;
+        font-weight: 400;
         color: white;
         line-height: 1.1;
         margin: 0;
@@ -48,6 +48,11 @@
 
     .testimonials-slider {
         position: relative;
+        background-color: #000;
+        background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("../images/bg2.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .slider-wrapper {
@@ -115,7 +120,7 @@
 
     .company-name {
         font-size: 16px;
-        font-weight: 600;
+        font-weight: 400;
         color: #ffffff;
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -159,7 +164,7 @@
 
     .client-name {
         font-size: 24px;
-        font-weight: 700;
+        font-weight: 400;
         color: white;
         margin: 0 0 5px 0;
         line-height: 1.2;

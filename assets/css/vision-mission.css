@@ -35,7 +35,7 @@
 
     .vm-label {
         font-size: 16px;
-        font-weight: 600;
+        font-weight: 400;
         color: #DE7415;
         text-transform: uppercase;
         letter-spacing: 2px;
@@ -44,7 +44,7 @@
 
     .vm-title {
         font-size: 48px;
-        font-weight: 600;
+        font-weight: 400;
         color: white;
         line-height: 1.2;
         margin: 0;
@@ -132,7 +132,7 @@
 
     .card-title {
         font-size: 24px;
-        font-weight: 600;
+        font-weight: 400;
         color: white;
         margin: 0 0 15px 0;
         line-height: 1.3;

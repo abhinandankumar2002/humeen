@@ -96,7 +96,7 @@
 
  .form-label {
      font-size: 14px;
-     font-weight: 600;
+     font-weight: 400;
      color: white;
      margin-bottom: 8px;
      text-transform: uppercase;
@@ -167,7 +167,7 @@
      background: linear-gradient(90deg, #ff0000 -77%, #000000 50%, #0e3978 112%);
      color: white;
      font-size: 16px;
-     font-weight: 600;
+     font-weight: 400;
      cursor: pointer;
      transition: all 0.3s ease;
      margin-top: 10px;
