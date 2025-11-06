@@ -56,7 +56,7 @@
 
     .step-box {
         width: 364px;
-        height: 440px;
+        height: 470px;
         border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: 16px;
         padding: 7px;
@@ -228,66 +228,66 @@
             font-size: 15px;
         }
 
-    @media (max-width: 480px) {
-        .getting-started {
-            padding: 40px 0;
-        }
+        @media (max-width: 480px) {
+            .getting-started {
+                padding: 40px 0;
+            }
 
-        .getting-started-container {
-            padding: 0 15px;
-        }
+            .getting-started-container {
+                padding: 0 15px;
+            }
 
-        .getting-started-header {
-            margin-bottom: 40px;
-            padding: 0 10px;
-        }
+            .getting-started-header {
+                margin-bottom: 40px;
+                padding: 0 10px;
+            }
 
-        .getting-started-title,
-        .getting-started-title h3 {
-            font-size: 28px !important;
-        }
+            .getting-started-title,
+            .getting-started-title h3 {
+                font-size: 28px !important;
+            }
 
-        .getting-started-subtitle {
-            font-size: 13px !important;
-            letter-spacing: 1px;
-            margin-bottom: 12px;
-        }
+            .getting-started-subtitle {
+                font-size: 13px !important;
+                letter-spacing: 1px;
+                margin-bottom: 12px;
+            }
 
-        .steps-grid {
-            gap: 25px;
-            max-width: 100%;
-        }
+            .steps-grid {
+                gap: 25px;
+                max-width: 100%;
+            }
 
-        .step-box {
-            width: 100%;
-            max-width: 100%;
-            height: auto;
-            min-height: 380px;
-            padding: 5px;
-        }
+            .step-box {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                min-height: 380px;
+                padding: 5px;
+            }
 
-        .step-image-container {
-            height: 200px;
-            margin-bottom: 20px;
-        }
+            .step-image-container {
+                height: 200px;
+                margin-bottom: 20px;
+            }
 
-        .step-content {
-            padding: 0 12px;
-        }
+            .step-content {
+                padding: 0 12px;
+            }
 
-        .step-heading {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
+            .step-heading {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
 
-        .step-text {
-            font-size: 14px;
-            line-height: 1.5;
-        }
+            .step-text {
+                font-size: 14px;
+                line-height: 1.5;
+            }
 
-        /* Adjust hover effects for mobile */
-        .step-box:hover {
-            transform: translateY(-5px);
+            /* Adjust hover effects for mobile */
+            .step-box:hover {
+                transform: translateY(-5px);
+            }
         }
     }
-}
