@@ -1,14 +1,13 @@
 /* Customers Section Styles */
 .customers {
     width: 100%;
-    padding: 80px 0;
+    padding: 100px 0;
     overflow: hidden;
 }
 
 .customers-container {
-    max-width: 1139px;
+    max-width: 1140px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
 .customers-title {

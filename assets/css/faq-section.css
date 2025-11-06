@@ -142,12 +142,40 @@
 }
 
 .accordion-icon {
-    transition: transform 0.3s ease;
+    transition: all 0.5s ease;
     flex-shrink: 0;
 }
 
-.accordion-item.active .accordion-icon {
-    transform: rotate(180deg);
+.vertical-line {
+    transition: all 0.5s ease;
+    transform-origin: center;
+}
+
+.horizontal-line {
+    transition: all 0.5s ease;
+    transform-origin: center;
+}
+
+/* Closed state - Plus icon */
+.accordion-item .vertical-line {
+    opacity: 1;
+    transform: rotate(0deg) scaleY(1);
+}
+
+.accordion-item .horizontal-line {
+    opacity: 1;
+    transform: rotate(0deg) scaleX(1);
+}
+
+/* Open state - Minus icon */
+.accordion-item.active .vertical-line {
+    opacity: 0;
+    transform: rotate(90deg) scaleY(0);
+}
+
+.accordion-item.active .horizontal-line {
+    opacity: 1;
+    transform: rotate(0deg) scaleX(1);
 }
 
 .accordion-content {

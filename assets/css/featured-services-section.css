@@ -103,7 +103,7 @@
 
 .service-content {
     flex: 1;
-    padding: 0px;
+    padding: 22px;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -3,6 +3,7 @@
    =============================== */
 .core-services {
   width: 100%;
+  padding-top: 100px;
   position: relative;
   text-align: center;
   background: black; /* assuming your site bg is black */
@@ -38,7 +39,7 @@
   height: 28px;
   margin: 0 auto 16px auto; /* center horizontally + spacing below */
   border-radius: 9999px;
-  background: linear-gradient(90deg, #FF5900 0%, #134B9D 100%);
+  background: linear-gradient(90deg, #FF5900 0%, #0000, #134B9D 100%);
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,19 +1,62 @@
-/* Hero Section Styles */
 .hero {
+  position: relative;
   width: 100%;
   min-height: 100vh;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 80px 0;
-  background-color: #0000;
-  background-image: url('../images/gradient-transparent-bg-last.png');
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  overflow: hidden; /* hides anything outside bounds */
+  background-color: #000; /* fallback color */
 }
+
+.hero-main{
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+
+/* Transparent gradient image */
+.hero-overlay-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2; /* sits above video */
+  pointer-events: none; /* ensures it doesn’t block clicks */
+}
+
+/* Optional overlay for better text contrast */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* adjust opacity */
+  z-index: 0;
+}
+
+/* Keep your hero content above video and overlay */
+.hero-container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+}
+
 
 .hero::before {
   content: '';
@@ -26,26 +69,25 @@
 }
 
 .hero-container {
-  max-width: 1139px;
+  max-width: 1140px;
   width: 100%;
-  padding: 0 20px;
   position: relative;
   z-index: 2;
 }
 
 .hero-badge {
-  width: 266px;
-  height: 63px;
+  width: 200px;
+  height: 30px;
   border-radius: 16px;
-  background: linear-gradient(90deg, #FF5900 0%, #134B9D 100%);
+  background: linear-gradient(90deg, #FF5900 0%, #0000, #134B9D 100%);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .inner-hero-badge {
-  width: 262px;
-  height: 59px;
+  width: 198px;
+  height: 28px;
   background: black;
   border-radius: 16px;
   /* optional: gives inner smooth edges */
@@ -55,8 +97,8 @@
 }
 
 .inner-hero-badge p {
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 600;
   color: white;
   margin: 0;
 }
@@ -92,7 +134,7 @@
 }
 
 .btn-primary {
-  background: linear-gradient(90deg, #DE7415 0%, #6F6E5E 78%, #0068A6 100%);
+  background: linear-gradient(90deg, linear-gradient(90deg, #FF5900 0%, #0000, #134B9D 100%));
   color: white;
 }
 
@@ -105,7 +147,7 @@
   background: transparent;
   color: white;
   border: 1px solid;
-  border-image: linear-gradient(90deg, #DE7415 0%, #6F6E5E 78%, #0068A6 100%) 1;
+  border-image: linear-gradient(90deg, linear-gradient(90deg, #FF5900 0%, #0000, #134B9D 100%)) 1;
 }
 
 .btn-secondary:hover {
@@ -128,8 +170,8 @@
   width: 178px;
   height: 50px;
   border: none;
-  border-radius: 8px;
-  background: linear-gradient(90deg, #FF5900 0%, #134B9D 100%);
+  border-radius: 12px;
+  background: linear-gradient(164deg, #ff7e00 0%, #0000, #134B9D 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -144,23 +186,17 @@
 .hero-btn::before {
   content: "";
   position: absolute;
-  top: -4px;
-  /* move glow outside */
+  top: -6px;
   left: 0;
   width: 100%;
-  height: 12px;
-  /* height of glow area */
-  background: linear-gradient(90deg,
-      rgba(255, 175, 2, 0) 0%,
-      rgb(255, 166, 2) 50%,
-      rgba(255, 179, 0, 0) 100%);
-  filter: blur(12px);
+  height: 27px;
+  background: linear-gradient(270deg, rgb(255 0 0 / 0%) 0%, rgb(255 104 0) 50%, rgb(255 179 0 / 5%) 100%);
+  filter: blur(6px);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   pointer-events: none;
-  z-index: 1;
+  z-index: 2;
   opacity: 0.9;
-  animation: glowPulse 2s ease-in-out infinite;
 }
 
 /* glowing pulse animation */
@@ -182,18 +218,19 @@
   width: 176px;
   height: 48px;
   background: black;
-  border-radius: 8px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   z-index: 2;
   /* stay below glow */
+  background: linear-gradient(5deg, #000000, #00000096);
 }
 
 .inner-hero-btn p {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: bold;
   color: white;
   margin: 0;
 }
@@ -204,7 +241,7 @@
   width: 178px;
   height: 50px;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
   background: #ffffff50;
   display: flex;
   align-items: center;
@@ -220,7 +257,7 @@
   width: 176px;
   height: 48px;
   background: black;
-  border-radius: 8px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -231,7 +268,7 @@
 
 .inner-view-btn p {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: bold;
   color: white;
   margin: 0;
 }
@@ -317,7 +354,8 @@
   }
 
   .inner-hero-badge p {
-    font-size: 20px;
+    font-size: 14px;
+    font-weight: bold;
   }
 
   .hero-description {
@@ -393,7 +431,8 @@
   }
 
   .inner-hero-badge p {
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: bold;
   }
 
   .hero-description {

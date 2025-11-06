@@ -19,7 +19,6 @@
     .testimonials-container {
         max-width: 1140px;
         margin: 0 auto;
-        padding: 0 20px;
         position: relative;
         z-index: 2;
     }
@@ -44,12 +43,13 @@
         color: white;
         line-height: 1.1;
         margin: 0;
+        text-align: left;
     }
 
     .testimonials-slider {
         position: relative;
         background-color: #000;
-        background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("../images/bg2.png");
+        background-image:url("../images/bg2.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
