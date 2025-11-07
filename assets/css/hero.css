@@ -1,12 +1,13 @@
 .hero {
   position: relative;
-  width: 100%;
-  min-height: 100vh;
+  height: auto;        /* let it grow with content */
+  min-height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden; /* hides anything outside bounds */
   background-color: #000; /* fallback color */
+  padding-top: 130px;
 }
 
 .hero-main{
