@@ -5,6 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Humeen</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/humeen_logo_tab_icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/humeen_logo_tab_icon.png">
+
+    <!-- ✅ Apple devices (iPhone, iPad, etc.) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/humeen_logo_tab_icon.png">
+
+    <!-- ✅ Android/Chrome high-resolution icon -->
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/humeen_logo_tab_icon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/images/humeen_logo_tab_icon.png">
+
+    <!-- ✅ Safari pinned tab (optional, if you have an SVG version) -->
+    <link rel="mask-icon" href="assets/images/humeen_logo_tab_icon.png" color="#5bbad5">
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="assets/css/navigation-bar.css">
@@ -30,7 +43,7 @@
         <nav class="navbar">
             <div class="logo">
 
-                <img src="assets/images/humeen_logo_tab_icon.png" alt="humeen-logo" width="25px" height="auto">
+                <img src="assets/images/humeen-logo.png" alt="humeen-logo" width="25px" height="auto">
 
                 <a href="index.html" style="text-decoration: none; color: inherit; font-size: 35px;">HUMEEN</a>
             </div>
@@ -42,12 +55,13 @@
                 <a href="contact.html">Contact</a>
             </div>
 
-            <button class="desktop-btn">
-                <div class="inner-nav-btn-desktop">
-                    <p>Get Started</p>
-                </div>
-            </button>
-
+            <a href="pricing.html">
+                <button class="desktop-btn">
+                    <div class="inner-nav-btn-desktop">
+                        <p>Get Started</p>
+                    </div>
+                </button>
+            </a>
             <!-- Mobile Hamburger -->
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -61,11 +75,14 @@
             <a href="about.html">About us</a>
             <a href="pricing.html">Pricing</a>
             <a href="contact.html">Contact</a>
-            <button class="nav-btn">
-                <div class="inner-nav-btn">
-                    <p>Get Started</p>
-                </div>
-            </button>
+
+            <a href="pricing.html">
+                <button class="nav-btn">
+                    <div class="inner-nav-btn">
+                        <p>Get Started</p>
+                    </div>
+                </button>
+            </a>
         </div>
     </div>
 
@@ -77,10 +94,10 @@
         <!-- Contact Section -->
         <section class="chat-section">
             <div class="contact-badge">
-                    <div class="contact-inner-badge">
-                        <p class="ct">Contact</p>
-                    </div>
+                <div class="contact-inner-badge">
+                    <p class="ct">Contact</p>
                 </div>
+            </div>
             <h2>Chat with the team</h2>
             <p>Have questions about our services or want a custom strategy for your business? Reach out to us—we love
                 talking marketing!</p>
@@ -292,17 +309,22 @@
                     <h2 class="cta-text">Digital Framework and<br> Business Strategy</h2>
 
                     <div class="hero-buttons">
-                        <button class="hero-btn">
-                            <div class="inner-hero-btn">
-                                <p>Show me How</p>
-                            </div>
-                        </button>
 
-                        <button class="view-btn">
-                            <div class="inner-view-btn">
-                                <p>View Price</p>
-                            </div>
-                        </button>
+                        <a href="humeen.com/index.html/#core-services">
+                            <button class="hero-btn">
+                                <div class="inner-hero-btn">
+                                    <p>Show me How</p>
+                                </div>
+                            </button>
+                        </a>
+
+                        <a href="pricing.html">
+                            <button class="view-btn">
+                                <div class="inner-view-btn">
+                                    <p>View Price</p>
+                                </div>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>

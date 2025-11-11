@@ -596,11 +596,14 @@ document.addEventListener('DOMContentLoaded', function () {
         { type: 'image', src: './assets/images/featured-icons/chat-gpt.png', alt: 'ChatGPT' },
         { type: 'image', src: './assets/images/featured-icons/facebook.png', alt: 'Facebook' },
         { type: 'image', src: './assets/images/featured-icons/meta.png', alt: 'Meta' },
+        { type: 'image', src: './assets/images/featured-icons/instagram.png', alt: 'Instagram' },
         { type: 'image', src: './assets/images/featured-icons/search.png', alt: 'Search' },
-        { type: 'image', src: './assets/images/featured-icons/social (1).png', alt: 'Social 1' },
+        { type: 'image', src: './assets/images/featured-icons/amazon.png', alt: 'Amazon' },
         { type: 'image', src: './assets/images/featured-icons/social.png', alt: 'Social' },
         { type: 'image', src: './assets/images/featured-icons/whatsapp.png', alt: 'WhatsApp' },
-        { type: 'image', src: './assets/images/featured-icons/youtube.png', alt: 'YouTube' }
+        { type: 'image', src: './assets/images/featured-icons/youtube.png', alt: 'YouTube' },
+        { type: 'image', src: './assets/images/featured-icons/noon.png', alt: 'Dubai Noon' },
+        { type: 'image', src: './assets/images/featured-icons/hostinger.png', alt: 'Hostinger' }
     ];
 
     const sliderTrack = document.getElementById('sliderTrack');
