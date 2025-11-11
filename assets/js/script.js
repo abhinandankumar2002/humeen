@@ -229,66 +229,45 @@ document.addEventListener('DOMContentLoaded', function () {
     const testimonialsData = [
         {
             company: "TechCorp Inc",
-            text: "HUMEEN transformed our digital presence completely. Our organic traffic increased by 240% in just 6 months, and we're seeing consistent growth in qualified leads.",
-            image: "https://via.placeholder.com/60/DE7415/FFFFFF?text=TC",
+            text: "HUMEEN transformed our online reach with creative visuals and smart marketing. Our engagement and followers grew rapidly after their promo campaign - highly recommended!",
+            image: "./assets/images/customersLogos/AsquareTechnologies.png",
             name: "Sarah Johnson",
-            designation: "Marketing Director"
+            designation: ""
         },
         {
             company: "StartupXYZ",
-            text: "The data-driven approach and strategic planning helped us scale from 0 to 10,000 customers in our first year. Incredible results!",
-            image: "https://via.placeholder.com/60/0068A6/FFFFFF?text=SX",
+            text: "Partnering with this digital marketing team has been a game-changer for our brand. Their innovative strategies and targeted campaigns have significantly increased our online visibility and customer engagement. We have seen a remarkable boost in sales, and our brand presence is stronger than ever. Highly recommended!",
+            image: "./assets/images/customersLogos/BellMark.png",
             name: "Mike Chen",
-            designation: "CEO & Founder"
+            designation: ""
         },
         {
             company: "GlobalBrand Co",
             text: "Their multi-channel strategy unified our messaging across all platforms. We've seen a 180% ROI on our marketing spend since partnering with HUMEEN.",
-            image: "https://via.placeholder.com/60/6F6E5E/FFFFFF?text=GB",
+            image: "./assets/images/customersLogos/FramesNestCustomizedGifts.png",
             name: "Emily Rodriguez",
-            designation: "Global Marketing Head"
+            designation: ""
         },
         {
             company: "EcommercePro",
             text: "The SEO optimization and content strategy doubled our conversion rates. Our online sales have never been better!",
-            image: "https://via.placeholder.com/60/DE7415/FFFFFF?text=EP",
+            image: "./assets/images/customersLogos/GeminiStudio.png",
             name: "David Kim",
-            designation: "E-commerce Manager"
+            designation: ""
         },
         {
             company: "InnovateLabs",
             text: "HUMEEN's creative team delivered stunning visuals that perfectly captured our brand voice. Engagement rates are through the roof!",
-            image: "https://via.placeholder.com/60/0068A6/FFFFFF?text=IL",
+            image: "./assets/images/customersLogos/Nuva.png",
             name: "Lisa Wang",
-            designation: "Creative Director"
+            designation: ""
         },
         {
             company: "Enterprise Solutions",
             text: "The analytics and conversion optimization work provided insights we never had before. Data-driven decisions are now our standard.",
-            image: "https://via.placeholder.com/60/6F6E5E/FFFFFF?text=ES",
+            image: "./assets/images/customersLogos/SriKumaranAgencies.png",
             name: "Robert Brown",
-            designation: "VP of Operations"
-        },
-        {
-            company: "DigitalFirst",
-            text: "From social media management to email campaigns, every aspect of our digital marketing is now streamlined and effective.",
-            image: "https://via.placeholder.com/60/DE7415/FFFFFF?text=DF",
-            name: "Amanda White",
-            designation: "Digital Marketing Lead"
-        },
-        {
-            company: "GrowthHackers",
-            text: "The personal branding coordination helped our executives become thought leaders in our industry. Amazing impact!",
-            image: "https://via.placeholder.com/60/0068A6/FFFFFF?text=GH",
-            name: "Kevin Patel",
-            designation: "Growth Strategist"
-        },
-        {
-            company: "BrandMasters",
-            text: "HUMEEN's reputation management services transformed how customers perceive our brand. Reviews and ratings have never been better.",
-            image: "https://via.placeholder.com/60/6F6E5E/FFFFFF?text=BM",
-            name: "Jessica Lee",
-            designation: "Brand Manager"
+            designation: ""
         }
     ];
 
