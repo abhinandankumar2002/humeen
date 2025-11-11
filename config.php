@@ -1,0 +1,2 @@
+SMTP_USER=hey@humeen.com
+SMTP_PASS=YourStrongEmailPassword

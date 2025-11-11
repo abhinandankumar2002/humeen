@@ -228,45 +228,38 @@ document.addEventListener('DOMContentLoaded', function () {
     // Testimonials data
     const testimonialsData = [
         {
-            company: "TechCorp Inc",
-            text: "HUMEEN transformed our online reach with creative visuals and smart marketing. Our engagement and followers grew rapidly after their promo campaign - highly recommended!",
-            image: "./assets/images/customersLogos/AsquareTechnologies.png",
+            company: "City House Dubai",
+            text: "HUMEEN captured the luxury and elegance of our brand perfectly. Their visuals boosted our online presence and helped us attract more premium clients – highly recommended!",
+            image: "./assets/images/customersLogos/cityhouse.png",
             name: "Sarah Johnson",
             designation: ""
         },
         {
-            company: "StartupXYZ",
-            text: "Partnering with this digital marketing team has been a game-changer for our brand. Their innovative strategies and targeted campaigns have significantly increased our online visibility and customer engagement. We have seen a remarkable boost in sales, and our brand presence is stronger than ever. Highly recommended!",
-            image: "./assets/images/customersLogos/BellMark.png",
+            company: "99 Stores",
+            text: "HUMEEN’s dynamic campaigns helped us connect with more customers online. Our store traffic and engagement shot up in no time – great results!",
+            image: "./assets/images/customersLogos/99Store.png",
             name: "Mike Chen",
             designation: ""
         },
         {
-            company: "GlobalBrand Co",
-            text: "Their multi-channel strategy unified our messaging across all platforms. We've seen a 180% ROI on our marketing spend since partnering with HUMEEN.",
-            image: "./assets/images/customersLogos/FramesNestCustomizedGifts.png",
+            company: "Indian Fishery Mart",
+            text: "Thanks to HUMEEN’s smart digital strategy, our seafood brand gained massive visibility. Sales and customer inquiries increased significantly – excellent work!",
+            image: "./assets/images/customersLogos/IFM.png",
             name: "Emily Rodriguez",
             designation: ""
         },
         {
-            company: "EcommercePro",
-            text: "The SEO optimization and content strategy doubled our conversion rates. Our online sales have never been better!",
-            image: "./assets/images/customersLogos/GeminiStudio.png",
+            company: "R K Enterprises",
+            text: "HUMEEN gave our business a fresh digital identity. Their creative marketing approach helped us grow our audience and build trust online – truly impressive!",
+            image: "./assets/images/customersLogos/RKenterprises.png",
             name: "David Kim",
             designation: ""
         },
         {
-            company: "InnovateLabs",
-            text: "HUMEEN's creative team delivered stunning visuals that perfectly captured our brand voice. Engagement rates are through the roof!",
-            image: "./assets/images/customersLogos/Nuva.png",
+            company: "The Cotton Buy",
+            text: "HUMEEN beautifully showcased our products with stylish visuals and effective promotions. Our reach expanded rapidly, bringing in more orders – highly satisfied!",
+            image: "./assets/images/customersLogos/theCottonBuy.png",
             name: "Lisa Wang",
-            designation: ""
-        },
-        {
-            company: "Enterprise Solutions",
-            text: "The analytics and conversion optimization work provided insights we never had before. Data-driven decisions are now our standard.",
-            image: "./assets/images/customersLogos/SriKumaranAgencies.png",
-            name: "Robert Brown",
             designation: ""
         }
     ];
@@ -668,4 +661,30 @@ document.addEventListener('DOMContentLoaded', function () {
         getLogos,
         initSlider
     };
+});
+
+document.getElementById("contactForm").addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const formData = new FormData(form);
+  const responseBox = document.getElementById("formResponse");
+
+  try {
+    const res = await fetch(form.action, {
+      method: form.method,
+      body: formData
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+      responseBox.innerHTML = `<p style="color:green;">${data.message}</p>`;
+      form.reset();
+    } else {
+      responseBox.innerHTML = `<p style="color:red;">${data.message}</p>`;
+    }
+  } catch (err) {
+    responseBox.innerHTML = `<p style="color:red;">Error submitting form. Please try again later.</p>`;
+  }
 });
