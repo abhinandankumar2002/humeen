@@ -313,6 +313,10 @@
 
  /* Mobile Responsiveness */
  @media (max-width: 1200px) {
+
+    .core-badge{
+        margin-bottom: 25px;
+    }
      .pricing-container {
          max-width: 95%;
      }
@@ -328,12 +332,17 @@
 
      .plan-card {
          width: 100%;
-         max-width: 364px;
+         max-width: auto;
          margin: 0 auto;
      }
  }
 
  @media (max-width: 1024px) {
+
+    .core-badge{
+        margin-bottom: 25px;
+    }
+
      .plans-grid {
          grid-template-columns: 1fr;
          gap: 30px;
@@ -351,6 +360,11 @@
  }
 
  @media (max-width: 768px) {
+    
+    .core-badge{
+        margin-bottom: 25px;
+    }
+
      .pricing-section {
          padding: 60px 0;
      }
@@ -371,7 +385,7 @@
 
      .plan-card {
          height: auto;
-         min-height: 650px;
+         min-height: auto;
          padding: 30px 25px;
      }
 

@@ -593,16 +593,14 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
     // Customer logos data - easily extendable
     const customerLogos = [
-        { type: 'text', content: 'Company A' },
-        { type: 'text', content: 'Brand B' },
-        { type: 'text', content: 'Enterprise C' },
-        { type: 'text', content: 'Startup D' },
-        { type: 'text', content: 'Corporation E' },
-        { type: 'text', content: 'Business F' },
-        { type: 'text', content: 'Organization G' }
-        // Add more logos here as needed
-        // Example for images:
-        // { type: 'image', src: 'path-to-logo.png', alt: 'Company Name' }
+        { type: 'image', src: './assets/images/featured-icons/chat-gpt.png', alt: 'ChatGPT' },
+        { type: 'image', src: './assets/images/featured-icons/facebook.png', alt: 'Facebook' },
+        { type: 'image', src: './assets/images/featured-icons/meta.png', alt: 'Meta' },
+        { type: 'image', src: './assets/images/featured-icons/search.png', alt: 'Search' },
+        { type: 'image', src: './assets/images/featured-icons/social (1).png', alt: 'Social 1' },
+        { type: 'image', src: './assets/images/featured-icons/social.png', alt: 'Social' },
+        { type: 'image', src: './assets/images/featured-icons/whatsapp.png', alt: 'WhatsApp' },
+        { type: 'image', src: './assets/images/featured-icons/youtube.png', alt: 'YouTube' }
     ];
 
     const sliderTrack = document.getElementById('sliderTrack');
@@ -652,11 +650,11 @@ document.addEventListener('DOMContentLoaded', function () {
         const logoCount = customerLogos.length;
         const duration = logoCount * 4; // 4 seconds per logo
         document.styleSheets[0].insertRule(`
-                @keyframes slide {
-                    0% { transform: translateX(0); }
-                    100% { transform: translateX(calc(-${150 + 60}px * ${logoCount})); }
-                }
-            `, document.styleSheets[0].cssRules.length);
+            @keyframes slide {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(calc(-${150 + 60}px * ${logoCount})); }
+            }
+        `, document.styleSheets[0].cssRules.length);
     }
 
     // Function to add new logo

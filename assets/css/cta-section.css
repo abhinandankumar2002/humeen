@@ -23,7 +23,7 @@
     }
 
     .cta-logo img {
-        height: 25px;
+        height: 100px;
         width: auto;
     }
 
@@ -80,6 +80,7 @@
 @media (max-width: 1200px) {
     .cta {
         margin-bottom: 10%;
+        padding: 0px;
     }
     
     .cta-container {
@@ -97,7 +98,8 @@
 
 @media (max-width: 768px) {
     .cta {
-        margin-top: 130%
+        margin-top: 130%;
+        padding: 0px;
     }
     }
     
@@ -105,9 +107,6 @@
         gap: 30px;
     }
     
-    .cta-logo img {
-        height: 22px;
-    }
     
     .cta-buttons {
         gap: 15px;
@@ -134,7 +133,7 @@
     }
     
     .cta-logo img {
-        height: 20px;
+        height: 80px;
     }
     
     .cta-buttons {
