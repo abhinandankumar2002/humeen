@@ -35,7 +35,6 @@
 /* Very small screens */
 @media (max-width: 480px) {
     .last-section {
-        height: auto;
-        padding-top: 15%;
+        height: auto;;
     }
 }

@@ -319,6 +319,10 @@
   }
 
   @media (max-width: 480px) {
+
+    .chat-section{
+        margin-top: 50px;
+    }
       .chat-section h2 {
           font-size: 36px;
       }

@@ -186,6 +186,11 @@
 
     @media (max-width: 768px) {
 
+        .vision-mission {
+        padding-top: 100px;
+        padding-bottom: 0px;
+    }
+
         .vm-header {
             margin-bottom: 50px;
         }

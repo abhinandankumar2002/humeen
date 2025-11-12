@@ -108,7 +108,8 @@
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .customers {
-        padding: 60px 0;
+        padding-top: 150px;
+        padding-bottom: 50px;
     }
 
     .customers-title {

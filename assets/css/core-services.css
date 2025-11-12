@@ -10,16 +10,6 @@
   overflow: hidden;
 }
 
-.core-services::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  pointer-events: none;
-}
-
 .services-container {
   max-width: 1139px;
   margin: 0 auto;
@@ -83,6 +73,9 @@
    Responsive Design
    =============================== */
 @media (max-width: 1200px) {
+  .core-services{
+    padding-top: 0;
+  }
   .services-container {
     max-width: 95%;
   }
