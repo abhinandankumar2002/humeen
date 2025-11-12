@@ -104,62 +104,65 @@
         </section>
 
         <section>
-  <div class="contact-container">
-    <div class="contact-form-container">
-      <form class="contact-form" action="send.php" method="POST" id="contactForm">
-        <!-- Row 1 -->
-        <div class="form-row-1">
-          <!-- Column Left -->
-          <div class="form-column">
-            <div class="form-group">
-              <label class="form-label">First Name</label>
-              <input type="text" class="form-input" name="first_name" placeholder="First name" required>
-            </div>
-            <div class="form-group">
-              <label class="form-label">Email</label>
-              <input type="email" class="form-input" name="email" placeholder="Your email" required>
-            </div>
-          </div>
+            <div class="contact-container">
+                <div class="contact-form-container">
+                    <form class="contact-form" action="send.php" method="POST" id="contactForm">
+                        <!-- Row 1 -->
+                        <div class="form-row-1">
+                            <!-- Column Left -->
+                            <div class="form-column">
+                                <div class="form-group">
+                                    <label class="form-label">First Name</label>
+                                    <input type="text" class="form-input" name="first_name" placeholder="First name"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-input" name="email" placeholder="Your email"
+                                        required>
+                                </div>
+                            </div>
 
-          <!-- Column Right -->
-          <div class="form-column">
-            <div class="form-group">
-              <label class="form-label">Last Name</label>
-              <input type="text" class="form-input" name="last_name" placeholder="Last name">
-            </div>
-            <div class="form-group">
-              <label class="form-label">Phone Number</label>
-              <input type="tel" class="form-input" name="phone" placeholder="Your phone">
-            </div>
-          </div>
-        </div>
+                            <!-- Column Right -->
+                            <div class="form-column">
+                                <div class="form-group">
+                                    <label class="form-label">Last Name</label>
+                                    <input type="text" class="form-input" name="last_name" placeholder="Last name">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-input" name="phone" placeholder="Your phone">
+                                </div>
+                            </div>
+                        </div>
 
-        <!-- Row 2 -->
-        <div class="form-row-2">
-          <div class="form-group full-width">
-            <label class="form-label">Message</label>
-            <textarea class="form-textarea" name="message" placeholder="Write your message" rows="4" required></textarea>
-          </div>
-        </div>
+                        <!-- Row 2 -->
+                        <div class="form-row-2">
+                            <div class="form-group full-width">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-textarea" name="message" placeholder="Write your message" rows="4"
+                                    required></textarea>
+                            </div>
+                        </div>
 
-        <!-- Row 3 -->
-        <div class="form-row-3">
-          <button type="submit" class="submit-btn">
-            <div class="inner-submit-btn">
-              <p>Submit</p>
+                        <!-- Row 3 -->
+                        <div class="form-row-3">
+                            <button type="submit" class="submit-btn">
+                                <div class="inner-submit-btn">
+                                    <p>Submit</p>
+                                </div>
+                            </button>
+                            <p class="privacy-text">
+                                By submitting this form, you agree to our friendly Privacy Policy
+                            </p>
+                        </div>
+                    </form>
+
+                    <!-- Success / Error Message -->
+                    <div id="formResponse"></div>
+                </div>
             </div>
-          </button>
-          <p class="privacy-text">
-            By submitting this form, you agree to our friendly Privacy Policy
-          </p>
-        </div>
-      </form>
-
-      <!-- Success / Error Message -->
-      <div id="formResponse"></div>
-    </div>
-  </div>
-</section>
+        </section>
 
     </section>
 
@@ -417,6 +420,73 @@
         </footer>
 
     </section>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', async function (e) {
+            e.preventDefault(); // Stop normal page reload
+
+            const form = e.target;
+            const formData = new FormData(form);
+            const responseBox = document.getElementById('formResponse');
+
+            // Optional: Disable submit button during send
+            const submitBtn = form.querySelector('.submit-btn');
+            submitBtn.disabled = true;
+
+            try {
+                const response = await fetch('send.php', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    showPopup("✅ Your message has been sent successfully!");
+                    form.reset();
+                } else {
+                    showPopup("❌ " + result.message);
+                }
+
+            } catch (error) {
+                showPopup("⚠️ Something went wrong. Please try again later.");
+            } finally {
+                submitBtn.disabled = false;
+            }
+        });
+
+        function showPopup(message) {
+            // Create popup container if it doesn't exist
+            let popup = document.getElementById('popup');
+            if (!popup) {
+                popup = document.createElement('div');
+                popup.id = 'popup';
+                document.body.appendChild(popup);
+            }
+
+            popup.textContent = message;
+            popup.style.position = 'fixed';
+            popup.style.bottom = '30px';
+            popup.style.left = '50%';
+            popup.style.transform = 'translateX(-50%)';
+            popup.style.background = '#2ecc71';
+            popup.style.color = '#fff';
+            popup.style.padding = '15px 25px';
+            popup.style.borderRadius = '6px';
+            popup.style.boxShadow = '0 5px 15px rgba(0,0,0,0.3)';
+            popup.style.zIndex = '9999';
+            popup.style.fontSize = '16px';
+            popup.style.opacity = '1';
+            popup.style.transition = 'opacity 0.5s ease';
+
+            // Auto fade out after 3 seconds
+            setTimeout(() => {
+                popup.style.opacity = '0';
+                setTimeout(() => popup.remove(), 500);
+            }, 3000);
+        }
+    </script>
+
 </body>
 
 </html>

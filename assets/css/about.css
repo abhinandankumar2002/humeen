@@ -1,7 +1,7 @@
     /* About Section Styles */
     .about-section {
         width: 100%;
-        margin-top: 70px;
+        margin-top: 20px;
         padding: 100px 0;
         position: relative;
         overflow: hidden;
@@ -37,6 +37,7 @@
         font-size: 42px;
         font-weight: 400;
         color: white;
+        margin-top: 50px;
     }
 
     .about-subheading {
