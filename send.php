@@ -1,26 +1,24 @@
 <?php
-// send.php (PHPMailer + SMTP version)
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/autoload.php'; // composer autoload OR require PHPMailer src files manually
+require 'vendor/autoload.php';
 
-// === CONFIG - update these ===
-$smtpHost = 'smtp.hostinger.com';   // Hostinger SMTP host (confirm in your Hostinger control panel)
-$smtpPort = 587;                    // port 587 for TLS or 465 for SSL
-$smtpUser = getenv('SMTP_USER');
-$smtpPass = getenv('SMTP_PASS');
-$toEmail  = 'hey@humeen.comm';   // recipient
+require_once __DIR__ . '/.private/config.php';
+
+$smtpHost = 'smtp.hostinger.com';
+$smtpPort = 465;                    
+$smtpUser = $config['SMTP_USER'];
+$smtpPass = $config['SMTP_PASS'];
+$toEmail  = 'hey@humeen.com';
 $fromName = 'Humeen';
 
-// === Fetch & sanitize POST ===
 $first_name = isset($_POST['first_name']) ? strip_tags(trim($_POST['first_name'])) : '';
 $last_name  = isset($_POST['last_name']) ? strip_tags(trim($_POST['last_name'])) : '';
 $email      = isset($_POST['email']) ? filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL) : '';
 $phone      = isset($_POST['phone']) ? strip_tags(trim($_POST['phone'])) : '';
 $message    = isset($_POST['message']) ? htmlspecialchars(trim($_POST['message'])) : '';
 
-// Basic validation
 if (empty($first_name) || empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
     header('Content-Type: application/json');
     echo json_encode(['success' => false, 'message' => 'Please provide a valid name and email.']);
@@ -30,18 +28,17 @@ if (empty($first_name) || empty($email) || !filter_var($email, FILTER_VALIDATE_E
 $mail = new PHPMailer(true);
 
 try {
-    // Server settings
     $mail->isSMTP();
     $mail->Host       = $smtpHost;
     $mail->SMTPAuth   = true;
     $mail->Username   = $smtpUser;
     $mail->Password   = $smtpPass;
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // or PHPMailer::ENCRYPTION_SMTPS for port 465
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; 
     $mail->Port       = $smtpPort;
 
     // Recipients
     $mail->setFrom($smtpUser, $fromName);
-    $mail->addAddress($toEmail);                // recipient
+    $mail->addAddress($toEmail);
     $mail->addReplyTo($email, $first_name);
 
     // Content

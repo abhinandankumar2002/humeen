@@ -231,35 +231,35 @@ document.addEventListener('DOMContentLoaded', function () {
             company: "City House Dubai",
             text: "HUMEEN captured the luxury and elegance of our brand perfectly. Their visuals boosted our online presence and helped us attract more premium clients – highly recommended!",
             image: "./assets/images/customersLogos/cityhouse.png",
-            name: "Sarah Johnson",
+            name: "SCity House Dubai",
             designation: ""
         },
         {
             company: "99 Stores",
             text: "HUMEEN’s dynamic campaigns helped us connect with more customers online. Our store traffic and engagement shot up in no time – great results!",
             image: "./assets/images/customersLogos/99Store.png",
-            name: "Mike Chen",
+            name: "99 Stores",
             designation: ""
         },
         {
             company: "Indian Fishery Mart",
             text: "Thanks to HUMEEN’s smart digital strategy, our seafood brand gained massive visibility. Sales and customer inquiries increased significantly – excellent work!",
             image: "./assets/images/customersLogos/IFM.png",
-            name: "Emily Rodriguez",
+            name: "Indian Fishery Mart",
             designation: ""
         },
         {
             company: "R K Enterprises",
             text: "HUMEEN gave our business a fresh digital identity. Their creative marketing approach helped us grow our audience and build trust online – truly impressive!",
             image: "./assets/images/customersLogos/RKenterprises.png",
-            name: "David Kim",
+            name: "R K Enterprises",
             designation: ""
         },
         {
             company: "The Cotton Buy",
             text: "HUMEEN beautifully showcased our products with stylish visuals and effective promotions. Our reach expanded rapidly, bringing in more orders – highly satisfied!",
             image: "./assets/images/customersLogos/theCottonBuy.png",
-            name: "Lisa Wang",
+            name: "The Cotton Buy",
             designation: ""
         }
     ];
