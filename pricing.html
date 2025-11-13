@@ -111,7 +111,7 @@
                         <p class="plan-subtitle">Perfect for new businesses</p>
                         <div class="plan-price">Rs 9,999<span>/m</span></div>
                         <button class="price-view-btn">
-                            <div class="inner-price-view-btn">
+                            <div class="inner-price-view-btn" data-plan="startup" class="plan-btn">
                                 <p>Get Started</p>
                             </div>
                         </button>
@@ -177,7 +177,7 @@
                         <p class="plan-subtitle">For growing companies</p>
                         <div class="plan-price">Rs 49,999<span>/3m</span></div>
                         <button class="price-btn">
-                            <div class="inner-price-btn">
+                            <div class="inner-price-btn" data-plan="business" class="plan-btn">
                                 <p>Get Started</p>
                             </div>
                         </button>
@@ -191,44 +191,24 @@
                             <div class="feature-icon-price">
                                 <img src="assets/images/mark.png" alt="Icon" width="24" height="24">
                             </div>
-                            <span>40 - Posters</span>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon-price">
-                                <img src="assets/images/mark.png" alt="Icon" width="24" height="24">
-                            </div>
-                            <span>20 - Reels Videos</span>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon-price">
-                                <img src="assets/images/mark.png" alt="Icon" width="24" height="24">
-                            </div>
-                            <span>Social Media Account Setup</span>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon-price">
-                                <img src="assets/images/mark.png" alt="Icon" width="24" height="24">
-                            </div>
-                            <span>Ad Campaign (5,00,000 reach)</span>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon-price">
-                                <img src="assets/images/mark.png" alt="Icon" width="24" height="24">
-                            </div>
-                            <span>Social Media Link Organizer Page</span>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon-price">
-                                <img src="assets/images/mark.png" alt="Icon" width="24" height="24">
-                            </div>
-                            <span>15 - Blogs post</span>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon-price">
-                                <img src="assets/images/mark.png" alt="Icon" width="24" height="24">
-                            </div>
                             <span>Digital Business Analytics</span>
                         </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon-price">
+                                <img src="assets/images/mark.png" alt="Icon" width="24" height="24">
+                            </div>
+                            <span>Website (free)</span>
+
+                            <!-- Info button -->
+                            <div class="info-container">
+                                <button class="info-btn">i</button>
+                                <div class="info-card">
+                                    This includes a free website setup with basic features and hosting.
+                                </div>
+                            </div>
+                        </div>
+
 
                         <div class="feature-item">
                             <div class="feature-icon-price">
@@ -290,13 +270,6 @@
                             <div class="feature-icon-price">
                                 <img src="assets/images/mark.png" alt="Icon" width="24" height="24">
                             </div>
-                            <span>Web Hosting (free)</span>
-                        </div>
-
-                        <div class="feature-item">
-                            <div class="feature-icon-price">
-                                <img src="assets/images/mark.png" alt="Icon" width="24" height="24">
-                            </div>
                             <span>Festival Visuals (free)</span>
                         </div>
 
@@ -316,8 +289,8 @@
                         <h3 class="plan-name">Enterprise</h3>
                         <p class="plan-subtitle">For large organizations</p>
                         <div class="plan-price">Custom</div>
-                        <button class="price-view-btn">
-                            <div class="inner-price-view-btn">
+                        <button class="price-view-btn"> 
+                            <div class="inner-price-view-btn" data-plan="enterprise" class="plan-btn enterprise-btn">
                                 <p>Contact Sailes</p>
                             </div>
                         </button>
@@ -609,6 +582,715 @@
         </footer>
 
     </section>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+            "@type": "Question",
+            "name": "What does HUMEEN actually do?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We help businesses grow online - from building 3D websites and running smart social campaigns to creating immersive AR/VR marketing experiences.
+        Simply put: we make your brand look good, feel real, and perform better in the digital world."
+            }
+            }, {
+            "@type": "Question",
+            "name": "Can you handle everything from branding to marketing?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes - that’s our thing.
+        Whether it’s logo design, web development, SEO, social media, or ad campaigns, we take care of it end-to-end.
+        You focus on your business, we handle your online presence.
+        "
+            }
+            }, {
+            "@type": "Question",
+            "name": "Is your work customized or based on templates?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Everything we do is built from scratch - your brand deserves its own identity.
+        We analyze your goals, audience, and competition before we create anything.
+        No copy-paste designs, no one-size-fits-all strategy - ever."
+            }
+            },
+        {
+            "@type": "Question",
+            "name": "How soon can I expect growth?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You’ll start noticing changes - reach, engagement, inquiries - usually within the first few weeks.
+        Our approach is not overnight hype; it’s steady, scalable, and designed for real growth that lasts."
+            }
+            },
+        {
+            "@type": "Question",
+            "name": "Why should I trust HUMEEN with my brand?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Because we treat your brand like our own.
+        We listen, adapt, and execute with care - no fake promises, just honest work and measurable results.
+        Our clients stay with us because they see the difference, not because they’re locked in by contracts."
+            }
+            }]
+        }
+    </script>
+
+    <!-- Add this modal structure right before the closing </body> tag -->
+<div class="modal-overlay" id="modalOverlay">
+    <!-- Startup Plan Modal -->
+    <div class="purchase-modal" id="startupModal">
+        <div class="modal-header">
+            <h3>Startup Plan Purchase</h3>
+            <button class="close-modal">&times;</button>
+        </div>
+        <form class="purchase-form" id="startupForm" action="send-purchase.php" method="POST">
+            <input type="hidden" name="plan_type" value="startup">
+            <input type="hidden" name="plan_price" value="9999">
+            
+            <div class="plan-summary">
+                <h4>Startup Plan</h4>
+                <p class="plan-price">Rs. 9,999 / 1 month</p>
+            </div>
+
+            <div class="form-group">
+                <label>Name *</label>
+                <input type="text" name="name" required placeholder="Your full name">
+            </div>
+
+            <div class="form-group">
+                <label>Organization (Optional)</label>
+                <input type="text" name="organization" placeholder="Your organization">
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number *</label>
+                <input type="tel" name="phone" required placeholder="Your phone number">
+            </div>
+
+            <div class="form-group">
+                <label>Email *</label>
+                <input type="email" name="email" required placeholder="Your email address">
+            </div>
+
+            <div class="form-group">
+                <label>Address Line 1 *</label>
+                <input type="text" name="address1" required placeholder="Street address">
+            </div>
+
+            <div class="form-group">
+                <label>Address Line 2</label>
+                <input type="text" name="address2" placeholder="Apartment, suite, etc.">
+            </div>
+
+            <div class="form-group">
+                <label>Quantity</label>
+                <select name="quantity" id="startupQuantity">
+                    <option value="1">1 month plan</option>
+                    <option value="3">3 months plan</option>
+                    <option value="6">6 months plan</option>
+                    <option value="12">12 months plan</option>
+                </select>
+            </div>
+
+            <div class="total-section">
+                <label>Total Amount</label>
+                <div class="total-amount" id="startupTotal">Rs. 9,999</div>
+            </div>
+
+            <div class="agreement-section">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="agreement" required>
+                    <span>I agree to the <a href="/terms" target="_blank">Terms and Conditions</a> and <a href="/privacy" target="_blank">Privacy Policy</a></span>
+                </label>
+            </div>
+
+            <button type="submit" class="submit-purchase-btn">
+                <span>Purchase Now</span>
+            </button>
+        </form>
+    </div>
+
+    <!-- Business Plan Modal -->
+    <div class="purchase-modal" id="businessModal">
+        <div class="modal-header">
+            <h3>Business Plan Purchase</h3>
+            <button class="close-modal">&times;</button>
+        </div>
+        <form class="purchase-form" id="businessForm" action="send-purchase.php" method="POST">
+            <input type="hidden" name="plan_type" value="business">
+            <input type="hidden" name="plan_price" value="49999">
+            
+            <div class="plan-summary">
+                <h4>Business Plan</h4>
+                <p class="plan-price">Rs. 49,999 / 3 months</p>
+            </div>
+
+            <div class="form-group">
+                <label>Name *</label>
+                <input type="text" name="name" required placeholder="Your full name">
+            </div>
+
+            <div class="form-group">
+                <label>Organization (Optional)</label>
+                <input type="text" name="organization" placeholder="Your organization">
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number *</label>
+                <input type="tel" name="phone" required placeholder="Your phone number">
+            </div>
+
+            <div class="form-group">
+                <label>Email *</label>
+                <input type="email" name="email" required placeholder="Your email address">
+            </div>
+
+            <div class="form-group">
+                <label>Address Line 1 *</label>
+                <input type="text" name="address1" required placeholder="Street address">
+            </div>
+
+            <div class="form-group">
+                <label>Address Line 2</label>
+                <input type="text" name="address2" placeholder="Apartment, suite, etc.">
+            </div>
+
+            <div class="total-section">
+                <label>Total Amount</label>
+                <div class="total-amount">Rs. 49,999</div>
+            </div>
+
+            <div class="agreement-section">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="agreement" required>
+                    <span>I agree to the <a href="/terms" target="_blank">Terms and Conditions</a> and <a href="/privacy" target="_blank">Privacy Policy</a></span>
+                </label>
+            </div>
+
+            <button type="submit" class="submit-purchase-btn">
+                <span>Purchase Now</span>
+            </button>
+        </form>
+    </div>
+
+    <!-- Enterprise Plan Modal -->
+    <div class="purchase-modal" id="enterpriseModal">
+        <div class="modal-header">
+            <h3>Enterprise Plan Inquiry</h3>
+            <button class="close-modal">&times;</button>
+        </div>
+        <form class="purchase-form" id="enterpriseForm" action="send-purchase.php" method="POST">
+            <input type="hidden" name="plan_type" value="enterprise">
+            
+            <div class="plan-summary">
+                <h4>Enterprise Plan</h4>
+                <p class="plan-price">Custom Pricing</p>
+            </div>
+
+            <div class="form-group">
+                <label>Name *</label>
+                <input type="text" name="name" required placeholder="Your full name">
+            </div>
+
+            <div class="form-group">
+                <label>Organization (Optional)</label>
+                <input type="text" name="organization" placeholder="Your organization">
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number *</label>
+                <input type="tel" name="phone" required placeholder="Your phone number">
+            </div>
+
+            <div class="form-group">
+                <label>Email *</label>
+                <input type="email" name="email" required placeholder="Your email address">
+            </div>
+
+            <div class="form-group">
+                <label>Address Line 1 *</label>
+                <input type="text" name="address1" required placeholder="Street address">
+            </div>
+
+            <div class="form-group">
+                <label>Address Line 2</label>
+                <input type="text" name="address2" placeholder="Apartment, suite, etc.">
+            </div>
+
+            <div class="appointment-notice">
+                <p>📞 We'll contact you within 24 hours to discuss your custom Enterprise plan requirements.</p>
+            </div>
+
+            <div class="agreement-section">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="agreement" required>
+                    <span>I agree to the <a href="/terms" target="_blank">Terms and Conditions</a> and <a href="/privacy" target="_blank">Privacy Policy</a></span>
+                </label>
+            </div>
+
+            <button type="submit" class="submit-purchase-btn">
+                <span>Request Consultation</span>
+            </button>
+        </form>
+    </div>
+</div>
+
+<!-- Response Message Container -->
+<div id="purchaseResponse" class="response-message"></div>
+
+<style>
+    /* Modal Styles */
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(10px);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 10000;
+        padding: 20px;
+    }
+
+    .modal-overlay.active {
+        display: flex;
+    }
+
+    .purchase-modal {
+        background: #000;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        padding: 0;
+        max-width: 500px;
+        width: 100%;
+        max-height: 90vh;
+        overflow-y: auto;
+        position: relative;
+    }
+
+    .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 30px 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .modal-header h3 {
+        color: white;
+        font-size: 24px;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .close-modal {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 28px;
+        cursor: pointer;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+
+    .close-modal:hover {
+        color: #DE7415;
+        transform: scale(1.1);
+    }
+
+    .purchase-form {
+        padding: 30px;
+    }
+
+    .plan-summary {
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .plan-summary h4 {
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0 0 10px 0;
+    }
+
+    .plan-price {
+        color: #DE7415;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .form-group input,
+    .form-group select {
+        width: 100%;
+        height: 47px;
+        border: 1px solid rgba(220, 220, 220, 0.2);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.05);
+        color: white;
+        font-size: 16px;
+        padding: 0 16px;
+        transition: all 0.3s ease;
+        outline: none;
+    }
+
+    .form-group input::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+        border-color: rgba(222, 116, 21, 0.6);
+        background: rgba(255, 255, 255, 0.08);
+        box-shadow: 0 0 0 2px rgba(222, 116, 21, 0.1);
+    }
+
+    .total-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        margin: 25px 0;
+    }
+
+    .total-section label {
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .total-amount {
+        color: #DE7415;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .appointment-notice {
+        background: rgba(0, 104, 166, 0.1);
+        border: 1px solid rgba(0, 104, 166, 0.3);
+        border-radius: 12px;
+        padding: 20px;
+        margin: 25px 0;
+        text-align: center;
+    }
+
+    .appointment-notice p {
+        color: white;
+        margin: 0;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .agreement-section {
+        margin: 25px 0;
+    }
+
+    .checkbox-label {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        color: white;
+        font-size: 14px;
+        line-height: 1.5;
+        cursor: pointer;
+    }
+
+    .checkbox-label input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        margin-top: 2px;
+        accent-color: #DE7415;
+    }
+
+    .checkbox-label a {
+        color: #DE7415;
+        text-decoration: none;
+    }
+
+    .checkbox-label a:hover {
+        text-decoration: underline;
+    }
+
+    .submit-purchase-btn {
+        width: 100%;
+        height: 52px;
+        border: none;
+        border-radius: 8px;
+        background: linear-gradient(90deg, #DE7415 0%, #6F6E5E 78%, #0068A6 100%);
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: 10px;
+    }
+
+    .submit-purchase-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(222, 116, 21, 0.4);
+    }
+
+    .submit-purchase-btn:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        transform: none;
+    }
+
+    .response-message {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 20px;
+        border-radius: 12px;
+        color: white;
+        font-weight: 600;
+        z-index: 10001;
+        max-width: 400px;
+        display: none;
+    }
+
+    .response-message.success {
+        background: rgba(34, 197, 94, 0.9);
+        display: block;
+    }
+
+    .response-message.error {
+        background: rgba(239, 68, 68, 0.9);
+        display: block;
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+        .purchase-modal {
+            max-width: 95%;
+            margin: 20px;
+        }
+
+        .modal-header {
+            padding: 25px 25px 15px;
+        }
+
+        .modal-header h3 {
+            font-size: 20px;
+        }
+
+        .purchase-form {
+            padding: 25px;
+        }
+
+        .form-group input,
+        .form-group select {
+            height: 44px;
+            font-size: 15px;
+        }
+
+        .submit-purchase-btn {
+            height: 48px;
+            font-size: 15px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .modal-header {
+            padding: 20px 20px 15px;
+        }
+
+        .purchase-form {
+            padding: 20px;
+        }
+
+        .plan-summary {
+            padding: 15px;
+        }
+
+        .total-section {
+            padding: 15px;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Modal elements
+        const modalOverlay = document.getElementById('modalOverlay');
+        const startupModal = document.getElementById('startupModal');
+        const businessModal = document.getElementById('businessModal');
+        const enterpriseModal = document.getElementById('enterpriseModal');
+        const closeButtons = document.querySelectorAll('.close-modal');
+        const responseMessage = document.getElementById('purchaseResponse');
+
+        // Plan selection buttons (you'll need to add these to your pricing cards)
+        const planButtons = document.querySelectorAll('.plan-btn, .apply-btn'); // Update selector as needed
+
+        // Show modal functions
+        function showStartupModal() {
+            hideAllModals();
+            startupModal.style.display = 'block';
+            modalOverlay.classList.add('active');
+        }
+
+        function showBusinessModal() {
+            hideAllModals();
+            businessModal.style.display = 'block';
+            modalOverlay.classList.add('active');
+        }
+
+        function showEnterpriseModal() {
+            hideAllModals();
+            enterpriseModal.style.display = 'block';
+            modalOverlay.classList.add('active');
+        }
+
+        function hideAllModals() {
+            startupModal.style.display = 'none';
+            businessModal.style.display = 'none';
+            enterpriseModal.style.display = 'none';
+        }
+
+        function closeModal() {
+            modalOverlay.classList.remove('active');
+            hideAllModals();
+        }
+
+        // Event listeners for modal
+        modalOverlay.addEventListener('click', function(e) {
+            if (e.target === modalOverlay) {
+                closeModal();
+            }
+        });
+
+        closeButtons.forEach(button => {
+            button.addEventListener('click', closeModal);
+        });
+
+        // Escape key to close modal
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
+                closeModal();
+            }
+        });
+
+        // Startup plan quantity calculation
+        const startupQuantity = document.getElementById('startupQuantity');
+        const startupTotal = document.getElementById('startupTotal');
+        const startupPrice = 9999;
+
+        if (startupQuantity && startupTotal) {
+            startupQuantity.addEventListener('change', function() {
+                const quantity = parseInt(this.value);
+                const total = startupPrice * quantity;
+                startupTotal.textContent = `Rs. ${total.toLocaleString()}`;
+            });
+        }
+
+        // Form submission handlers
+        const forms = document.querySelectorAll('.purchase-form');
+        
+        forms.forEach(form => {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                submitPurchaseForm(this);
+            });
+        });
+
+        function submitPurchaseForm(form) {
+            const submitBtn = form.querySelector('.submit-purchase-btn');
+            const originalText = submitBtn.innerHTML;
+            
+            // Disable button and show loading
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span>Processing...</span>';
+
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showResponse(data.message, 'success');
+                    form.reset();
+                    closeModal();
+                } else {
+                    showResponse(data.message, 'error');
+                }
+            })
+            .catch(error => {
+                showResponse('An error occurred. Please try again.', 'error');
+                console.error('Error:', error);
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalText;
+            });
+        }
+
+        function showResponse(message, type) {
+            responseMessage.textContent = message;
+            responseMessage.className = `response-message ${type}`;
+            
+            setTimeout(() => {
+                responseMessage.style.display = 'none';
+            }, 5000);
+        }
+
+        // Attach modal openers to your plan buttons
+        // You'll need to add appropriate classes or data attributes to your plan buttons
+        document.addEventListener('click', function(e) {
+            const planBtn = e.target.closest('[data-plan="startup"]');
+            if (planBtn) {
+                e.preventDefault();
+                showStartupModal();
+            }
+
+            const businessBtn = e.target.closest('[data-plan="business"]');
+            if (businessBtn) {
+                e.preventDefault();
+                showBusinessModal();
+            }
+
+            const enterpriseBtn = e.target.closest('[data-plan="enterprise"]');
+            if (enterpriseBtn) {
+                e.preventDefault();
+                showEnterpriseModal();
+            }
+        });
+    });
+</script>
+
 </body>
 
 </html>

@@ -4,6 +4,55 @@
      background: #000;
      position: relative;
  }
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+/* Info button styling */
+.info-btn {
+    background-color: transparent;
+    border: 1px solid #da4e24;
+    color: #da4e24;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 0;
+    text-align: center;
+    line-height: 18px;
+}
+
+/* Container so tooltip positions relative to it */
+.info-container {
+    position: relative;
+}
+
+/* Info card (hidden by default) */
+.info-card {
+    display: none;
+    position: absolute;
+    top: -15px;
+    left: 140px;
+    /* right: -40px; */
+    background-color: #da4e24;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    width: 200px;
+    z-index: 1;
+}
+
+/* Show card on hover */
+.info-container:hover .info-card {
+    display: block;
+}
+
 
  .price-core-badge{
     width: 200px;
