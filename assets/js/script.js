@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', function () {
             company: "City House Dubai",
             text: "HUMEEN captured the luxury and elegance of our brand perfectly. Their visuals boosted our online presence and helped us attract more premium clients – highly recommended!",
             image: "./assets/images/customersLogos/cityhouse.png",
-            name: "SCity House Dubai",
+            name: "City House Dubai",
             designation: ""
         },
         {
@@ -661,30 +661,4 @@ document.addEventListener('DOMContentLoaded', function () {
         getLogos,
         initSlider
     };
-});
-
-document.getElementById("contactForm").addEventListener("submit", async function (e) {
-  e.preventDefault();
-
-  const form = e.target;
-  const formData = new FormData(form);
-  const responseBox = document.getElementById("formResponse");
-
-  try {
-    const res = await fetch(form.action, {
-      method: form.method,
-      body: formData
-    });
-
-    const data = await res.json();
-
-    if (data.success) {
-      responseBox.innerHTML = `<p style="color:green;">${data.message}</p>`;
-      form.reset();
-    } else {
-      responseBox.innerHTML = `<p style="color:red;">${data.message}</p>`;
-    }
-  } catch (err) {
-    responseBox.innerHTML = `<p style="color:red;">Error submitting form. Please try again later.</p>`;
-  }
 });

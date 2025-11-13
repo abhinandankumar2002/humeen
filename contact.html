@@ -5,19 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Humeen</title>
+    <meta name="title" content="Contact HUMEEN | Get Your Custom Digital Strategy">
+    <meta name="description" content="Ready to grow your business? Contact HUMEEN's digital marketing team for custom strategies in SEO, social media, web development, and AR/VR experiences.">
+    <meta name="keywords" content="contact humeen, digital marketing agency, get quote, business inquiry, seo consultation, social media marketing, web development">
+    <meta name="author" content="HUMEEN">
+    <meta name="robots" content="index, follow">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/humeen_logo_tab_icon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/humeen_logo_tab_icon.png">
-
-    <!-- ✅ Apple devices (iPhone, iPad, etc.) -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/humeen_logo_tab_icon.png">
-
-    <!-- ✅ Android/Chrome high-resolution icon -->
     <link rel="icon" type="image/png" sizes="192x192" href="assets/images/humeen_logo_tab_icon.png">
     <link rel="icon" type="image/png" sizes="512x512" href="assets/images/humeen_logo_tab_icon.png">
-
-    <!-- ✅ Safari pinned tab (optional, if you have an SVG version) -->
     <link rel="mask-icon" href="assets/images/humeen_logo_tab_icon.png" color="#5bbad5">
-
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="assets/css/navigation-bar.css">\
@@ -104,65 +102,62 @@
         </section>
 
         <section>
-            <div class="contact-container">
-                <div class="contact-form-container">
-                    <form class="contact-form" action="send.php" method="POST" id="contactForm">
-                        <!-- Row 1 -->
-                        <div class="form-row-1">
-                            <!-- Column Left -->
-                            <div class="form-column">
-                                <div class="form-group">
-                                    <label class="form-label">First Name</label>
-                                    <input type="text" class="form-input" name="first_name" placeholder="First name"
-                                        required>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label">Email</label>
-                                    <input type="email" class="form-input" name="email" placeholder="Your email"
-                                        required>
-                                </div>
-                            </div>
-
-                            <!-- Column Right -->
-                            <div class="form-column">
-                                <div class="form-group">
-                                    <label class="form-label">Last Name</label>
-                                    <input type="text" class="form-input" name="last_name" placeholder="Last name">
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label">Phone Number</label>
-                                    <input type="tel" class="form-input" name="phone" placeholder="Your phone">
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Row 2 -->
-                        <div class="form-row-2">
-                            <div class="form-group full-width">
-                                <label class="form-label">Message</label>
-                                <textarea class="form-textarea" name="message" placeholder="Write your message" rows="4"
-                                    required></textarea>
-                            </div>
-                        </div>
-
-                        <!-- Row 3 -->
-                        <div class="form-row-3">
-                            <button type="submit" class="submit-btn">
-                                <div class="inner-submit-btn">
-                                    <p>Submit</p>
-                                </div>
-                            </button>
-                            <p class="privacy-text">
-                                By submitting this form, you agree to our friendly Privacy Policy
-                            </p>
-                        </div>
-                    </form>
-
-                    <!-- Success / Error Message -->
-                    <div id="formResponse"></div>
-                </div>
+  <div class="contact-container">
+    <div class="contact-form-container">
+      <form class="contact-form" action="send.php" method="POST" id="contactForm">
+        <!-- Row 1 -->
+        <div class="form-row-1">
+          <!-- Column Left -->
+          <div class="form-column">
+            <div class="form-group">
+              <label class="form-label">First Name</label>
+              <input type="text" class="form-input" name="first_name" placeholder="First name" required>
             </div>
-        </section>
+            <div class="form-group">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-input" name="email" placeholder="Your email" required>
+            </div>
+          </div>
+
+          <!-- Column Right -->
+          <div class="form-column">
+            <div class="form-group">
+              <label class="form-label">Last Name</label>
+              <input type="text" class="form-input" name="last_name" placeholder="Last name">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone Number</label>
+              <input type="tel" class="form-input" name="phone" placeholder="Your phone">
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="form-row-2">
+          <div class="form-group full-width">
+            <label class="form-label">Message</label>
+            <textarea class="form-textarea" name="message" placeholder="Write your message" rows="4" required></textarea>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="form-row-3">
+          <button type="submit" class="submit-btn">
+            <div class="inner-submit-btn">
+              <p>Submit</p>
+            </div>
+          </button>
+          <p class="privacy-text">
+            By submitting this form, you agree to our friendly Privacy Policy
+          </p>
+        </div>
+      </form>
+
+      <!-- Success / Error Message -->
+      <div id="formResponse"></div>
+    </div>
+  </div>
+</section>
 
     </section>
 
@@ -180,7 +175,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq-section">
+    <section class="faq-section" id="faq">
         <div class="faq-container">
             <div class="faq-columns">
                 <!-- Left Column -->
@@ -207,11 +202,13 @@
                 margin: 0;">FAQ</p>
                         </div>
                     </div>
-                    <h2 class="faq-title">Frequently <br>asked <br>questions</h2>
+                    <h2 class="faq-title">Frequently asked <br>questions</h2>
                     <div class="faq-contact">
                         <p class="contact-bold">Got any Questions?</p>
                         <p class="contact-text">Let us know! Reach out and our team will get right back to you.</p>
-                        <button class="contact-btn">Contact us</button>
+                        <a href="contact.html">
+                            <button class="contact-btn">Contact us</button>
+                        </a>
                     </div>
                 </div>
 
@@ -318,7 +315,7 @@
 
                     <div class="hero-buttons">
 
-                        <a href="humeen.com/index.html/#core-services">
+                        <a href="index.html">
                             <button class="hero-btn">
                                 <div class="inner-hero-btn">
                                     <p>Show me How</p>
@@ -357,19 +354,17 @@
                         <div class="footer-column">
                             <h3 class="column-title">Menu</h3>
                             <ul class="footer-links">
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Pricing</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="pricing.html">Pricing</a></li>
+                                <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </div>
 
                         <div class="footer-column">
                             <h3 class="column-title">Quick Links</h3>
                             <ul class="footer-links">
-                                <li><a href="#">Carriers</a></li>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Team</a></li>
+                                <li><a href="about.html/#carriers ">Carriers</a></li>
+                                <li><a href="#faq">FAQ</a></li>
                             </ul>
                         </div>
 
@@ -403,10 +398,12 @@
                             </svg>
                         </a>
                         <a href="#" class="social-icon">
-                            <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
-                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.016 10.016 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z" />
+                                    d="M18.244 2H21.5l-7.5 8.574L22 22h-6.277l-4.69-6.094L6 22H2.74l8.002-9.147L2 2h6.364l4.254 5.647L18.244 2zM17.09 20h1.65L7.01 4h-1.8l11.88 16z" />
                             </svg>
+
                         </a>
                         <a href="#" class="social-icon">
                             <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
@@ -420,7 +417,7 @@
         </footer>
 
     </section>
-
+    
     <script>
         document.getElementById('contactForm').addEventListener('submit', async function (e) {
             e.preventDefault(); // Stop normal page reload
@@ -486,60 +483,61 @@
             }, 3000);
         }
     </script>
-
-    <script type="application/ld+json">
+    
+        <script type="application/ld+json">
         {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
             "@type": "Question",
             "name": "What does HUMEEN actually do?",
             "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "We help businesses grow online - from building 3D websites and running smart social campaigns to creating immersive AR/VR marketing experiences.
+            "@type": "Answer",
+            "text": "We help businesses grow online - from building 3D websites and running smart social campaigns to creating immersive AR/VR marketing experiences.
         Simply put: we make your brand look good, feel real, and perform better in the digital world."
             }
-            }, {
+        }, {
             "@type": "Question",
             "name": "Can you handle everything from branding to marketing?",
             "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes - that’s our thing.
+            "@type": "Answer",
+            "text": "Yes - that’s our thing.
         Whether it’s logo design, web development, SEO, social media, or ad campaigns, we take care of it end-to-end.
         You focus on your business, we handle your online presence.
         "
             }
-            }, {
+        }, {
             "@type": "Question",
             "name": "Is your work customized or based on templates?",
             "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Everything we do is built from scratch - your brand deserves its own identity.
+            "@type": "Answer",
+            "text": "Everything we do is built from scratch - your brand deserves its own identity.
         We analyze your goals, audience, and competition before we create anything.
         No copy-paste designs, no one-size-fits-all strategy - ever."
             }
-            },
+        },
         {
             "@type": "Question",
             "name": "How soon can I expect growth?",
             "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "You’ll start noticing changes - reach, engagement, inquiries - usually within the first few weeks.
+            "@type": "Answer",
+            "text": "You’ll start noticing changes - reach, engagement, inquiries - usually within the first few weeks.
         Our approach is not overnight hype; it’s steady, scalable, and designed for real growth that lasts."
             }
-            },
+        },
         {
             "@type": "Question",
             "name": "Why should I trust HUMEEN with my brand?",
             "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Because we treat your brand like our own.
+            "@type": "Answer",
+            "text": "Because we treat your brand like our own.
         We listen, adapt, and execute with care - no fake promises, just honest work and measurable results.
         Our clients stay with us because they see the difference, not because they’re locked in by contracts."
             }
-            }]
+        }]
         }
     </script>
+    
 </body>
 
 </html>

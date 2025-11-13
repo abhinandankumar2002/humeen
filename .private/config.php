@@ -1,5 +1,5 @@
 <?php
 $config = [
-    'SMTP_USER' => 'your_username',
-    'SMTP_PASS' => 'your_password'
+    'SMTP_USER' => 'hey@humeen.com',
+    'SMTP_PASS' => 'W3@humeen.com'
 ];

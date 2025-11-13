@@ -256,6 +256,13 @@
   .form-input:valid:not(:focus):not(:placeholder-shown) {
       border-color: rgba(100, 255, 100, 0.4);
   }
+  
+  #popup {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.3px;
+  font-weight: 500;
+}
+
 
   /* ====== Responsive Design ====== */
   @media (max-width: 1024px) {
